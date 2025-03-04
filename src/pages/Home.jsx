@@ -4,12 +4,13 @@ import ProgramScope from "./home_sections/ProgramScope";
 import MissionVision from "./home_sections/MissionVision";
 
 function Home() {
-  return;
-  <>
-    <VideoSection />
-    <ProgramScope />
-    <MissionVision />
-  </>;
+  return (
+    <>
+      <VideoSection />
+      <ProgramScope />
+      <MissionVision />
+    </>
+  );
 }
 
 export default Home;

@@ -1,7 +1,7 @@
 import React from "react";
 
-function ProgramScope() {
+function VideoSection() {
   return <div>text</div>;
 }
 
-export default ProgramScope;
+export default VideoSection;

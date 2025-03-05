@@ -1,0 +1,139 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding-top: 40px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.apply-form {
+  margin-top: 100px;
+  padding: 50px;
+}
+h2 {
+  text-align: center;
+  color: #004aad;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.industry {
+  text-align: center;
+  color: #004aad;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+.form-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 170px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+input {
+  width: 50%;
+}
+
+select {
+  width: 25%;
+}
+.select {
+  width: 100%;
+}
+.form-div select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="blue"><path d="M7 10l5 5 5-5z"></path></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+.checkbox {
+  margin-right: 75%;
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+.next,
+.back {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 20%;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+.back {
+  margin-left: 170px;
+}
+form button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 20%;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #004099);
+  transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}

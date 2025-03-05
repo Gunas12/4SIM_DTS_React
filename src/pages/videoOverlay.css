@@ -1,16 +1,16 @@
 .video-home {
-  position: relative; /* Fixed əvəzinə relative */
+  position: relative;
   width: 100%;
   height: 90vh;
-  overflow: hidden; /* Scroll yaranmasın deyə */
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: black; /* Əlavə olaraq qara fon */
+  background: black;
 }
 
 .video-home video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Videonu ekranı tam doldurmaq üçün */
+  object-fit: cover;
 }

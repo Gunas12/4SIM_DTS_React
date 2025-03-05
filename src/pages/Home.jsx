@@ -8,8 +8,9 @@ function Home() {
   return (
     <>
       <VideoOverlay />
-      <VideoSection />
       <ProgramScope />
+      <VideoSection />
+
       <MissionVision />
     </>
   );

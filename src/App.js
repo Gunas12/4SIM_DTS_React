@@ -9,9 +9,9 @@ const App = () => {
     <div>
       {/*showVideo && <VideoOverlay onClose={() => setShowVideo(false)} />*/}
       <Navbar />
-      <ProgramScope />
-      {/* <Outlet />
-      <Footer /> */}
+      <Outlet />
+      <Footer />
+
     </div>
   );
 };

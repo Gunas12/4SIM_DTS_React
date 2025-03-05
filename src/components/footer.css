@@ -22,7 +22,7 @@
   display: block !important;
   padding: 0;
   width: 100vw;
-  box-sizing: border-box; /* Elementin sərhədlər daxilində genişliyini qoruyur */
+  box-sizing: border-box;
 }
 
 .footer-content {

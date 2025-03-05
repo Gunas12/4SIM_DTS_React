@@ -2,13 +2,15 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProgramScope from './pages/home_sections/ProgramScope'
 import "./App.css";
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
-      <Footer />
+      <ProgramScope/>
+      {/* <Outlet />
+      <Footer /> */}
     </div>
   );
 };

@@ -5,10 +5,10 @@ import Footer from "./components/Footer";
 import VideoOverlay from "./pages/VideoOverlay";
 import "./App.css";
 const App = () => {
-  const [showVideo, setShowVideo] = useState(true);
+  //const [showVideo, setShowVideo] = useState(true);
   return (
     <div>
-      {showVideo && <VideoOverlay onClose={() => setShowVideo(false)} />}
+      {/*showVideo && <VideoOverlay onClose={() => setShowVideo(false)} />*/}
       <Navbar />
       <Outlet />
       <Footer />

@@ -1,19 +1,14 @@
 import React from "react";
 import "./videoOverlay.css";
-import OverlayVideo from "../assets/videos/Your_paragraph_text.mp4";
+import OverlayVideo from "../assets/videos/overlay_video.mp4";
 
-function VideoOverlay({ onClose }) {
+function VideoOverlay() {
   return (
-    <div className="video-overlay">
-      <div className="video-wrapper">
-        <video autoPlay muted loop>
-          <source src={OverlayVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <button className="close-btn" onClick={onClose}>
-          ✖
-        </button>
-      </div>
+    <div className="video-home">
+      <video autoPlay muted loop>
+        <source src={OverlayVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }

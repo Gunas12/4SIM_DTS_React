@@ -9,7 +9,7 @@ function Home() {
     <>
       <VideoOverlay />
       <ProgramScope />
-      <VideoSection />
+      {/* <VideoSection />*/}
 
       <MissionVision />
     </>

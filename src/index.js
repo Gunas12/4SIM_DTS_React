@@ -5,6 +5,8 @@ import "./index.css";
 import App from "./App";
 import Home from "./pages/Home";
 import Apply from "./pages/Apply";
+import Eligibility from "./pages/Eligibility";
+import SuccesStories from "./pages/SuccesStories";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "apply",
         element: <Apply />,
+      },
+      {
+        path: "eligibity",
+        element: <Eligibility />,
+      },
+      {
+        path: "successstories",
+        element: <SuccesStories />,
       },
     ],
   },

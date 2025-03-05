@@ -4,7 +4,7 @@ import Mission from "../../assets/images/mission.jpg";
 import Vision from "../../assets/images/vision.jpg";
 function MissionVision() {
   return (
-    <div className="missionVision">
+    <div className="missionVision" id="Mission">
       <div>
         <h2>Mission</h2>
         <img src={Mission} alt="Mission_Img" />

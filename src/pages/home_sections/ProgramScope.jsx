@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../home_sections/programScope.css";
 import "./programScope.css";
-import videoSource from "../home_sections/Your_paragraph_text.mp4";
+import videoSource from "../../assets/videos/Your_paragraph_text.mp4";
 
 const VideoComponent = () => {
   return (
@@ -18,7 +18,7 @@ const VideoComponent = () => {
           <a href="#">Proqramın məqsədi</a>
         </div>
         <div className="circle">
-          <a href="#">Missiya və vizyon</a>
+          <a href="#Mission">Missiya və vizyon</a>
         </div>
       </div>
     </div>

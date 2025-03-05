@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import logo from "../assets/images/4simlogoaz.svg";
-import { FiMenu, FiX } from "react-icons/fi"; 
+import { FiMenu, FiX } from "react-icons/fi";
 
 const menuReducer = (state, action) => {
   switch (action.type) {
@@ -35,12 +35,18 @@ const Navbar = () => {
         <div className={`navbar-ul-div ${state.isOpen ? "open" : ""}`}>
           <ul>
             <li>About the Program</li>
-            <li>Eligibility & Prioritization</li>
-            <li>Success Stories</li>
+            <li>
+              <Link to="/eligibity">Eligibility & Prioritization</Link>
+            </li>
+            <li>
+              <Link to="/successstories">Success Stories</Link>
+            </li>
             <li>FAQ</li>
             <li>Contact us</li>
             <div className="navbar-buttons">
-              <button className="apply-button">Apply Now</button>
+              <Link to="/apply">
+                <button className="apply-button">Apply Now</button>
+              </Link>
               <button className="language-button">AZ</button>
             </div>
           </ul>

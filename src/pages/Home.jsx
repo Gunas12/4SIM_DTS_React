@@ -7,7 +7,7 @@ import VideoOverlay from "./VideoOverlay";
 function Home() {
   return (
     <>
-      <VideoOverlay />
+      {/* <VideoOverlay> */}
       <ProgramScope />
       {/* <VideoSection />*/}
 

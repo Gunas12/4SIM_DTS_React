@@ -6,7 +6,7 @@ import Metak from "../assets/images/metak.jpg";
 function SuccesStories() {
   return (
     <div className="succes">
-      <div className="video-home">
+      <div className="video-home1">
         <video autoPlay muted loop>
           <source src={Success} type="video/mp4" />
           Your browser does not support the video tag.

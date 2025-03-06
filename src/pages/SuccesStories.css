@@ -64,11 +64,11 @@
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 400px;
-  height: 500px;
+  width: 380px;
+  height: 550px;
 }
 .story img {
-  width: 400px;
+  width: 380px;
   height: 190px;
   border: 1px solid blanchedalmond;
 }
@@ -87,7 +87,7 @@
   margin: 0;
   line-height: 1.7rem;
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
 }
 @media (max-width: 768px) {

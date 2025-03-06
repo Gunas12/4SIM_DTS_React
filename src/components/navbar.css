@@ -300,6 +300,12 @@ nav {
   }
 }
 .navbar-ul-div ul li a {
-  color: white;
+  color: rgba(255, 255, 255, 0.769);
   text-decoration: none;
+  font-size: 14.5px;
+}
+.navbar-ul-div ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 14.5px;
 }

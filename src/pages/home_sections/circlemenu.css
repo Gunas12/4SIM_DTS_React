@@ -2,6 +2,16 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
+  height: 120vh;
+  top: 30px;
+}
+.video-containerr video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  object-position: center;
+  transition: all 0.3s ease;
 }
 
 .circle-menu {
@@ -40,6 +50,7 @@
   color: white;
   font-size: 16px;
 }
+/*
 @media (max-width: 768px) {
   .circle-menu {
     position: static;
@@ -56,7 +67,7 @@
     font-size: 12px;
     padding: 5px;
   }
-}
+}*/
 
 .circle-link {
   text-decoration: none;
@@ -69,4 +80,530 @@
   color: white;
   font-size: 15px;
   transform: scale(1.1);
+}
+
+/*-----------------*/
+
+@media (max-width: 1400px) {
+  .circle-menu {
+    right: calc(2vw);
+    gap: calc(13vw);
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .circle-menu {
+    right: calc(3.4vw);
+    gap: calc(11vw);
+  }
+
+  .circle {
+    width: 88px;
+    height: 88px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+@media (max-width: 1200px) {
+  .circle-menu {
+    right: calc(3.4vw);
+    gap: calc(11vw);
+  }
+
+  .circle {
+    width: 88px;
+    height: 88px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+/*
+@media (max-width: 1100px) {
+  .circle-menu {
+    right: calc(3.3vw);
+    gap: calc(8vw);
+  }
+
+  .circle {
+    width: 85px;
+    height: 85px;
+    font-size: 13px;
+    padding: 5px;
+  }
+}
+@media (max-width: 900px) {
+  .circle-menu {
+    right: calc(3vw);
+    gap: calc(9vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 13px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 150vh;
+    object-fit: cover;
+    object-position: -10% center;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(3vw);
+    gap: calc(9vw);
+  }
+
+  .circle {
+    width: 70px;
+    height: 70px;
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+*/
+@media (max-width: 1400px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(0.5vw);
+    gap: calc(13vw);
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(0.5vw);
+    gap: calc(13vw);
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(0.5vw);
+    gap: calc(14vw);
+  }
+
+  .circle {
+    width: 85px;
+    height: 85px;
+    font-size: 15px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(0.6vw);
+    gap: calc(17vw);
+  }
+
+  .circle {
+    width: 74px;
+    height: 74px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 850px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(0.9vw);
+    gap: calc(18vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(2.1vw);
+    gap: calc(22vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(2.2vw);
+    gap: calc(21vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(4vw);
+    gap: calc(23vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 580px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(4vw);
+    gap: calc(27vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(5vw);
+    gap: calc(28vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 515px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(5vw);
+    gap: calc(30vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 488px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(6vw);
+    gap: calc(31vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(8vw);
+    gap: calc(32vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 437px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(8vw);
+    gap: calc(34vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(8vw);
+    gap: calc(35vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 398px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(8vw);
+    gap: calc(39vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(10vw);
+    gap: calc(42vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .video-container {
+    overflow: hidden;
+  }
+  .video-containerr video {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    object-position: right;
+    transform: scale(1.1);
+  }
+  .circle-menu {
+    right: calc(12vw);
+    gap: calc(49vw);
+  }
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    padding: 5px;
+  }
 }

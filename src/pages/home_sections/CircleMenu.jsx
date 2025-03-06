@@ -7,8 +7,8 @@ import AboutProgram from "./Aboutprogram";
 
 const VideoComponent = () => {
   return (
-    <div style={{ width: "100%", height: "auto" }} className="video-containerr">
-      <video width="100%" height="auto" autoPlay muted loop>
+    <div className="video-containerr">
+      <video autoPlay muted loop>
         <source src={videoSource} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

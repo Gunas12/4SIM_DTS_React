@@ -22,7 +22,7 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className="logo" />
         <div className="divider"></div>
         <div className="digital-div">
-          <p className="digital">Rəqəmsal </p>
+          <p className="digital">Rəqəmsal</p>
           <p className="digital">Transformasiya</p>
           <p className="digital">Proqramı</p>
         </div>

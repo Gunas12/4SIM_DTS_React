@@ -1,0 +1,53 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.circle-menu {
+  position: absolute;
+  top: 52%;
+  right: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 240px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(99, 154, 236);
+}
+.circle-link{
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 768px) {
+  .circle-menu {
+      position: static; 
+      transform: none;
+      flex-direction: row; 
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .circle {
+      width: 80px;
+      height: 80px;
+      font-size: 12px;
+      padding: 5px;
+  }
+}

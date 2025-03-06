@@ -13,8 +13,8 @@
   flex-direction: column;
   align-items: center;
   gap: 240px;
-  /*right: calc(4vw);
-  gap: calc(11.2vw);*/
+  right: calc(4vw);
+  gap: calc(11.2vw);
 }
 
 .circle {

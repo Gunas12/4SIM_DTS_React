@@ -1,7 +1,8 @@
 import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import logo from "../assets/images/4simlogoaz.svg";
+import logoAZ from "../assets/images/4simlogoaz.svg";
+import logoEng from "../assets/images/4simlogoen.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 const menuReducer = (state, action) => {
@@ -20,6 +21,7 @@ const Navbar = () => {
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "az" ? "en" : "az");
   };
+  const logo = i18n.language === "az" ? logoAZ : logoEng;
   return (
     <nav>
       <div className="nav-container">

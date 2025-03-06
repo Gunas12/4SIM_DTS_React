@@ -19,7 +19,20 @@
 
 .circle {
   width: 120px;
-  height: 120px;
+  position: absolute;
+  top: 32%;
+  height: 40%;
+  right: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55%;
+}
+
+.circle {
+  width: 120px;
+  min-height: 120px;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -28,11 +41,52 @@
   text-align: center;
   font-size: 14px;
   font-weight: bold;
+  background-color: rgb(103, 103, 219);
   /* padding: 10px; */
+}
+.circle:hover {
+  background: #007bff;
 }
 a {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  video {
+    padding-top: 80px;
+    height: 100%;
+  }
+  .circle-menu {
+    position: absolute;
+    top: 30%;
+    height: 40%;
+    width: 20%;
+    right: 5%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1%;
+  }
+
+  .circle {
+    width: 12%;
+    height: 120px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    /* padding: 10px; */
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 700px) {

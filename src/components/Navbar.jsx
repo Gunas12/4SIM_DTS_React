@@ -19,7 +19,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-container">
-        <img src={logo} alt="Logo" className="logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="logo" />
+        </Link>
         <div className="divider"></div>
         <div className="digital-div">
           <p className="digital">Rəqəmsal</p>
@@ -36,7 +38,9 @@ const Navbar = () => {
 
         <div className={`navbar-ul-div ${state.isOpen ? "open" : ""}`}>
           <ul>
-            <li>About the Program</li>
+            <li>
+              <Link to="/about">About the Program</Link>
+            </li>
             <li>
               <Link to="/eligibity">Eligibility & Prioritization</Link>
             </li>

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./programscope.css";
+import "./programScope.css";
 
 const ProgramScope = () => {
   return (
-    <div className="program-main-container">
+    <div className="program-main-container" id="Scope">
       <div className="program-first-div">
         <h2 style={{ textAlign: "center" }}> Program Scope</h2>
         <p style={{ textAlign: "center" }}>

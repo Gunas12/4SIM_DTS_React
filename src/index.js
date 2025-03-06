@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Apply from "./pages/Apply";
 import Eligibility from "./pages/Eligibility";
 import SuccesStories from "./pages/SuccesStories";
-
+import About from "./pages/About";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "successstories",
         element: <SuccesStories />,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
     ],
   },

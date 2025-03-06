@@ -299,3 +299,7 @@ nav {
     padding-left: 0px;
   }
 }
+.navbar-ul-div ul li a {
+  color: white;
+  text-decoration: none;
+}

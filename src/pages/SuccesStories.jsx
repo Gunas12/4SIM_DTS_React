@@ -2,7 +2,8 @@ import React from "react";
 import Success from "../assets/videos/success.mp4";
 import "./SuccesStories.css";
 import Metak from "../assets/images/metak.jpg";
-
+import Stp from "../assets/images/stp.jpg";
+import Azerfloat from "../assets/images/azerfloat.png";
 function SuccesStories() {
   return (
     <div className="succes">
@@ -39,7 +40,7 @@ function SuccesStories() {
             </p>
           </div>
           <div className="story">
-            <img src={Metak} alt="metak_logo" />
+            <img src={Azerfloat} alt="azerfloat_logo" />
             <h2>Azerfloat</h2>
             <p>
               Specializing in glass production, Azerfloat used the program to
@@ -50,7 +51,7 @@ function SuccesStories() {
             </p>
           </div>
           <div className="story">
-            <img src={Metak} alt="metak_logo" />
+            <img src={Stp} alt="STP_logo" />
             <h2>STP (Sumgait Technologies Park)</h2>
             <p>
               As one of the largest industrial hubs in Azerbaijan, STP embraced

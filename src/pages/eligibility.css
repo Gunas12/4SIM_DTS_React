@@ -27,6 +27,7 @@
   right: 7%;
   color: white;
   z-index: 10;
+  font-size: 3.7rem;
 }
 
 .video-titl p {
@@ -101,7 +102,7 @@
 .prioritization-methodology h3,
 .eligibility-criteria .description {
   text-align: center;
-  padding-bottom: 17px;
+  padding-bottom: 10px;
   font-size: 24px;
 }
 .eligibility-criteria .description {
@@ -165,16 +166,78 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 50vh;
+  height: 80vh;
   width: 100%;
   flex-wrap: wrap;
 }
 .prior_card {
-  width: 400px;
+  width: 410px;
+  height: 550px;
+  background-color: #eef2ff96;
+  border-radius: 20px;
 }
 .prior_card img {
-  width: 360px;
+  /* width: 360px;*/
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
+}
+.eligibility-criteria h3,
+.prioritization-methodology h3 {
+  font-size: 25px;
+  padding: 15px 0;
+  color: #4077d8;
+}
+.eligibility-criteria .description {
+  font-size: 19px;
+  padding: 12px 0;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  line-height: 2.8rem;
+}
+
+.prioritization-methodology p {
+  font-size: 19px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 5px 0px;
+  line-height: 2.3rem;
+}
+.prior_cards_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.prior_cards_section img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 2px;
+  border-radius: 10px 10px 0 0;
+}
+
+.prior_card h2 {
+  color: hsl(218, 66%, 55%);
+  margin: 7px auto;
+  align-self: flex-start;
+  padding-bottom: 15px;
+  width: 93%;
+}
+
+.prior_card p {
+  width: 93%;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 1.6rem;
+  margin-top: 5px;
+  font-size: 17px;
 }

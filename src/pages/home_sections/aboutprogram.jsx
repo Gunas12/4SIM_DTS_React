@@ -20,7 +20,7 @@ const AboutProgram = () => {
           <b>
             the program aims to empower Azerbaijani businesses by supporting
             their comprehensive digital transformation.
-          </b>{" "}
+          </b>
           It provides funding, capability-building support, and expert guidance
           to accelerate digital adoption across industries.
         </p>

@@ -1,0 +1,180 @@
+.elig {
+  width: 100%;
+  background-color: #eef2ff;
+  padding: 20px 0;
+}
+
+.video-home3 {
+  position: relative;
+  width: 100%;
+  height: 74vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  overflow: hidden;
+}
+
+.video-home3 video {
+  width: 100%;
+  height: 74vh;
+  object-fit: cover;
+}
+
+.video-titl {
+  position: absolute;
+  top: 24%;
+  right: 7%;
+  color: white;
+  z-index: 10;
+}
+
+.video-titl p {
+  font-size: 3.4rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Tab düymələri */
+.tab-buttons {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 999;
+}
+
+.tab-buttons button {
+  background: linear-gradient(135deg, #4077d8, #1e3a8a);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin-right: 15px;
+  width: 300px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid white;
+}
+
+.tab-buttons button:hover,
+.tab-buttons button.active {
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  transform: scale(1.05);
+}
+
+.elig-sections {
+  position: relative;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.eligibility-criteria,
+.prioritization-methodology {
+  width: 85%;
+
+  margin: 10px 0;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Animasiya */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.eligibility-criteria h3,
+.prioritization-methodology h3,
+.eligibility-criteria .description {
+  text-align: center;
+  padding-bottom: 17px;
+  font-size: 24px;
+}
+.eligibility-criteria .description {
+  text-align: center;
+  padding-bottom: 17px;
+  font-size: 18px;
+}
+
+.criteria-item h4 {
+  text-align: left;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+.criteria-item p {
+  text-align: left;
+  align-items: self-start;
+  font-size: 17px;
+}
+.criteria-item li {
+  text-align: left;
+  align-items: self-start;
+  font-size: 17px;
+  margin: 10px;
+}
+.criteria-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.criteria-item {
+  flex: 1;
+  min-width: 300px;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.criteria-item::before {
+  content: "✔";
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #ffffffb0;
+}
+
+.criteria-item:hover,
+.prior_card:hover {
+  transform: translateY(-5px) rotate(1deg);
+}
+
+.prior_cards_section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.prior_card {
+  width: 400px;
+}
+.prior_card img {
+  width: 360px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}

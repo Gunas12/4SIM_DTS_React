@@ -1,13 +1,16 @@
 import React from "react";
 import VideoSection from "./home_sections/VideoSection";
-import ProgramScope from "./home_sections/ProgramScope";
+import CircleMenu from "./home_sections/CircleMenu";
 import MissionVision from "./home_sections/MissionVision";
-
+import AboutProgram from './home_sections/aboutprogram';
+import ProgramScope from "./home_sections/programscope";
 function Home() {
   return (
     <>
       <VideoSection />
-      <ProgramScope />
+      {/* <CircleMenu /> */}
+      <AboutProgram/>
+      <ProgramScope/>
       <MissionVision />
     </>
   );

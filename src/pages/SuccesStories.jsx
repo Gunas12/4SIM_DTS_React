@@ -1,5 +1,5 @@
 import React from "react";
-import Success from "../assets/videos/success.mp4";
+import Success from "../assets/videos/succes_v.mp4";
 import "./SuccesStories.css";
 import Metak from "../assets/images/metak.jpg";
 import Stp from "../assets/images/stp.jpg";

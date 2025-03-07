@@ -9,6 +9,7 @@ import Apply from "./pages/Apply";
 import Eligibility from "./pages/Eligibility";
 import SuccesStories from "./pages/SuccesStories";
 import About from "./pages/About";
+import Fag from "./pages/Fag";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "fag",
+        element: <Fag />,
       },
     ],
   },

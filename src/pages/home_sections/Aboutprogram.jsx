@@ -5,7 +5,7 @@ const AboutProgram = () => {
   return (
     <div className="about-program-main-container" id="abouttt">
       <div className="about-first-div">
-        <h2>About Program</h2>
+        <h2 className="about-program-title">About Program</h2>
         <p>
           The Digital Transformation Program is spearheaded by the Center for
           Analysis and Coordination of the Fourth Industrial Revolution(4SIM),

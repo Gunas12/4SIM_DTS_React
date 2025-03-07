@@ -1,3 +1,4 @@
+/*
 .video-containerr {
   position: relative;
   width: 100%;
@@ -17,11 +18,12 @@
 .circle-menu {
   position: absolute;
   top: 52%;
-  right: 0.05%;
+   right: 0.05%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 180px;
 }
 
@@ -55,8 +57,8 @@
   font-size: 15px;
   transform: scale(1.1);
 }
-
-/**/
+*/
+/*
 
 @media (max-width: 1522px) {
   .video-container {
@@ -123,8 +125,9 @@
     font-size: 18px;
   }
 }
-
+*/
 /* nest hub max */
+/*
 @media (max-width: 1282px) {
   .video-container {
     overflow: hidden;
@@ -158,7 +161,7 @@
     font-size: 18px;
   }
 }
-/* ipad pro */
+ ipad pro 
 @media (max-width: 1040px) {
   .video-container {
     overflow: hidden;
@@ -191,8 +194,8 @@
     font-size: 24px;
   }
 }
-
-/* nest hub */
+*/
+/* nest hub 
 @media (max-width: 1025px) {
   .video-container {
     overflow: hidden;
@@ -249,7 +252,8 @@
     padding: 5px;
   }
 }
-/* asus zenbook fold */
+ asus zenbook fold */
+/*
 @media (max-width: 854px) {
   .video-container {
     overflow: hidden;
@@ -282,7 +286,7 @@
     font-size: 26px;
   }
 }
-/* ipad air */
+ipad air 
 @media (max-width: 850px) {
   .video-container {
     overflow: hidden;
@@ -574,8 +578,8 @@
     padding: 5px;
   }
 }
-
-/* iphone 12 pro */
+*/
+/*
 @media (max-width: 392px) {
   .video-container {
     overflow: hidden;
@@ -606,7 +610,7 @@
   }
 }
 
-/*iphone se*/
+/*iphone se
 @media (max-width: 376px) {
   .video-container {
     overflow: hidden;
@@ -692,5 +696,117 @@
     height: 175px;
     font-size: 14px;
     padding: 5px;
+  }
+}*/
+
+/*-------------------------------------------------------*/
+
+.video-containerr {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.video-containerr video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.circle-menu {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+  gap: 30px;
+}
+
+.circle {
+  width: 170px;
+  height: 170px;
+  background-color: #007bffc7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.circle-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: 80%;
+  line-height: 1.2;
+}
+
+.circle:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.circle:active {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1450px) {
+  .circle {
+    width: 135px;
+    height: 135px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .circle-menu {
+    right: 5%;
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .video-containerr {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .video-containerr video {
+    width: auto;
+    height: 100%;
+    object-position: left;
+  }
+
+  .circle-menu {
+    right: 8%;
+    top: 40%;
+  }
+
+  .circle {
+    width: 140px;
+    height: 140px;
+    font-size: 14px;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./programscope.css";
+import "./programScope.css";
 
 const ProgramScope = () => {
   return (

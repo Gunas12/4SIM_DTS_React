@@ -17,19 +17,17 @@
 .circle-menu {
   position: absolute;
   top: 52%;
-  right: 5%;
+  right: 0.05%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 240px;
-  right: calc(4vw);
-  gap: calc(11.2vw);
+  gap: 180px;
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 50%;
@@ -43,18 +41,13 @@
   background-color: rgb(99, 154, 236);
 }
 .circle-link {
+  font-size: 20px;
   text-decoration: none;
   color: white;
 }
 .circle-link:hover {
   color: white;
   font-size: 16px;
-}
-.circle-link {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 14px;
-  transition: color 0.3s, font-size 0.3s, transform 0.3s;
 }
 
 .circle-link:hover {

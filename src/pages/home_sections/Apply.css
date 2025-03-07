@@ -1,45 +1,44 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f4f7fc;
   margin: 0;
   padding-top: 40px;
 }
-.form-group {
-  margin-bottom: 20px;
+
+.form-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
 }
+
 .apply-form {
-  margin-top: 100px;
   padding: 50px;
 }
+
 h2 {
-  text-align: center;
+  text-align: left;
   color: #004aad;
   font-weight: 700;
   margin-bottom: 50px;
-  text-align: left;
 }
+
 .industry {
-  text-align: center;
+  text-align: left;
   color: #004aad;
   font-weight: 700;
   margin-top: 40px;
   margin-bottom: 0;
-  text-align: left;
 }
-
+.company-size-container {
+  display: flex;
+  gap: 80px;
+}
 label {
   display: block;
   font-weight: 600;
   margin-bottom: 8px;
   color: #333;
 }
-.form-div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 170px;
-}
+
 input,
 select,
 textarea {
@@ -50,16 +49,43 @@ textarea {
   font-size: 16px;
   transition: border-color 0.3s;
 }
+
+input[type="file"] {
+  padding: 5px;
+}
+
+.form-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0;
+}
+
 input {
   width: 50%;
+}
+
+label {
+  margin-top: 18px;
+}
+
+.confirm-checkbox {
+  width: 4%;
+}
+
+.key-checkbox {
+  width: 10%;
 }
 
 select {
   width: 25%;
 }
+
 .select {
   width: 100%;
 }
+
 .form-div select {
   appearance: none;
   -webkit-appearance: none;
@@ -85,34 +111,9 @@ textarea:focus {
   outline: none;
 }
 
-input[type="file"] {
-  padding: 5px;
-}
-.checkbox {
-  margin-right: 75%;
-}
-.checkbox-group {
-  display: flex;
-  align-items: center;
-}
 .next,
-.back {
-  background: linear-gradient(135deg, #007bff, #0056b3);
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  width: 20%;
-  margin-top: 15px;
-  transition: background 0.3s, transform 0.2s;
-}
-.back {
-  margin-left: 170px;
-}
-form button {
+.back,
+.submit-button {
   background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
   border: none;
@@ -131,9 +132,111 @@ button:hover {
   transform: scale(1.02);
 }
 
-@media (max-width: 600px) {
-  .container {
-    width: 90%;
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 1200px) {
+  .form-div {
+    margin-left: 50px;
+  }
+
+  .apply-form {
+    padding: 30px;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  select {
+    width: 70%;
+  }
+
+  .next,
+  .back,
+  .submit-button {
+    width: 100%;
+    margin-left: 0;
+  }
+  .confirm-checkbox {
+    width: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-div {
+    margin-left: 20px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+  }
+
+  .apply-form {
     padding: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .next,
+  .back,
+  .submit-button {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .checkbox-group {
+    gap: 10px;
+  }
+  .confirm-checkbox {
+    width: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply-form {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  .industry {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .form-container {
+    margin-top: 60px;
+  }
+  .form-div {
+    margin-left: 0;
+  }
+
+  .next,
+  .back,
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+  .confirm-checkbox {
+    width: 10%;
+  }
+  .company-size-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 }

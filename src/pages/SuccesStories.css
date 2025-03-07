@@ -1,0 +1,103 @@
+.success {
+  width: 100%;
+  height: 170vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fff !important;
+}
+
+.video-home1 {
+  position: relative;
+  width: 100%;
+  height: 74vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.video-home video {
+  width: 100%;
+  height: 74vh;
+  object-fit: cover;
+}
+
+.video-title {
+  position: absolute;
+  top: 27%;
+  right: 7%;
+  color: white;
+  font-size: 3.7rem;
+  margin: 0;
+  z-index: 10;
+}
+
+.description-section {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  border-radius: 8px;
+}
+.bb {
+  font-weight: 700;
+}
+.stories-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.story {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 380px;
+  height: 550px;
+}
+.story img {
+  width: 380px;
+  height: 190px;
+  border: 1px solid blanchedalmond;
+}
+
+.story h2 {
+  color: #4077d8;
+  margin: 10px 0;
+  align-self: flex-start;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.story p {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  line-height: 1.7rem;
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .story {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .story {
+    width: 100%;
+  }
+}

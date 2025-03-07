@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ProgramScope from './pages/home_sections/CircleMenu'
-
+import VideoOverlay from "./pages/VideoOverlay";
 import "./App.css";
+
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
   return (
-    <div>
-      <Navbar />
-      <ProgramScope/>
-      <Outlet />
-      <Footer />
-    </div>
+    <>
+      {loading ? (
+        <VideoOverlay onVideoEnd={() => setLoading(false)} />
+      ) : (
+        <>
+          <Navbar />
+          <Outlet />
+          <Footer />
+        </>
+      )}
+    </>
   );
 };
 

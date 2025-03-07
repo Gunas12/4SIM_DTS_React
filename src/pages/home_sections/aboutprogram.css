@@ -1,59 +1,103 @@
+body {
+  overflow-x: hidden;
+}
+
 .about-program-main-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 40px;
-    margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  margin: 20px;
+  height: 100vh;
 }
 
 .about-first-div {
-    width: 50%;
+  width: 50%;
 }
 
 .about-first-div h2 {
-    color: #0645AD;
-    font-size: 28px;
-    font-weight: bold;
+  color: #0645ad;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .about-first-div p {
-    font-size: 20px;
-    line-height: 30px;
-    color: #333;
-    margin-top: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333;
+  margin-top: 10px;
 }
 
 .about-first-div p:nth-child(3) {
-    color: #0645AD;
-    font-weight: bold;
+  color: #0645ad;
+  font-weight: bold;
 }
 
 .about-second-div {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    border-radius: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .about-second-div img {
-    max-width: 400px;
-    margin-bottom: 20px;
+  max-width: 400px;
+  margin-bottom: 20px;
 }
 
-.about-second-div h2 {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
+@media screen and (max-width: 1024px) {
+  .about-program-main-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .about-first-div,
+  .about-second-div {
+    width: 90%;
     text-align: center;
+  }
 }
 
-.about-second-div p {
-    color: white;
-    font-size: 14px;
-    text-align: center;
+@media screen and (max-width: 768px) {
+  .about-program-main-container {
+    padding: 20px;
+  }
+
+  .about-first-div h2 {
+    font-size: 24px;
+  }
+
+  .about-first-div p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .about-second-div img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-program-main-container {
+    padding: 10px;
+  }
+
+  .about-first-div h2 {
+    font-size: 22px;
+  }
+
+  .about-first-div p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about-second-div {
+    padding: 20px;
+  }
 }

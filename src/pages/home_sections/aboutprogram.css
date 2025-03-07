@@ -1,7 +1,7 @@
-body {
+html, body {
   overflow-x: hidden;
+  width: 100%;
 }
-
 .about-program-main-container {
   display: flex;
   flex-direction: row;
@@ -9,7 +9,7 @@ body {
   align-items: center;
   width: 100%;
   padding: 40px;
-  margin: 20px;
+  margin-top: 20px;
   height: 100vh;
 }
 
@@ -50,11 +50,13 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1180px) {
   .about-program-main-container {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    height: auto;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 50px;
   }
 
   .about-first-div,
@@ -62,11 +64,19 @@ body {
     width: 90%;
     text-align: center;
   }
+  .about-program-title{
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .about-program-main-container {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 220px;
   }
 
   .about-first-div h2 {
@@ -82,10 +92,59 @@ body {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 550px) {
+  .about-program-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 260px;
+    margin-bottom: 50px;
+  }
+
+  .about-first-div h2 {
+    font-size: 22px;
+  }
+
+  .about-first-div p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about-second-div {
+    padding: 20px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .about-program-main-container {
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 220px;
+  }
+
+  .about-first-div h2 {
+    font-size: 22px;
+  }
+
+  .about-first-div p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about-second-div {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-program-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 300px;
   }
 
   .about-first-div h2 {

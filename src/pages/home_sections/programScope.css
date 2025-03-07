@@ -50,7 +50,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+  .program-main-container{
+    margin-top: 180px;
+  }
   .program-second-div {
     padding: 40px;
     gap: 20px;
@@ -68,6 +71,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  .program-main-container{
+    margin-top: 200px;
+  }
+  .program-first-div{
+    padding: 20px;
+  }
   .program-second-div {
     padding: 20px;
   }

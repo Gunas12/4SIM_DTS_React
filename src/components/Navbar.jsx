@@ -43,33 +43,43 @@ const Navbar = () => {
         </div>
 
         <div className={`navbar-ul-div ${state.isOpen ? "open" : ""}`}>
-          <ul>
-            <li>
-              <Link to="/about">About the Program</Link>
-            </li>
-            <li>
-              <Link to="/eligibity">Eligibility & Prioritization</Link>
-            </li>
-            <li>
-              <Link to="/successstories">Success Stories</Link>
-            </li>
-            <li>
-              {" "}
-              <Link to="/fag">FAQ</Link>
-            </li>
-            <li>
-              <Link to="/">Contact us</Link>
-            </li>
-            <div className="navbar-buttons">
-              <Link to="/apply">
-                <button className="apply-button">Apply Now</button>
-              </Link>
-              <button className="language-button" onClick={toggleLanguage}>
-                {i18n.language === "az" ? "EN" : "AZ"}
-              </button>
-            </div>
-          </ul>
-        </div>
+  <ul>
+    <li>
+      <Link to="/about" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+        About the Program
+      </Link>
+    </li>
+    <li>
+      <Link to="/eligibity" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+        Eligibility & Prioritization
+      </Link>
+    </li>
+    <li>
+      <Link to="/successstories" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+        Success Stories
+      </Link>
+    </li>
+    <li>
+      <Link to="/faq" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+        FAQ
+      </Link>
+    </li>
+    <li>
+      <Link to="/contact" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+        Contact us
+      </Link>
+    </li>
+    <div className="navbar-buttons">
+      <Link to="/apply" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+        <button className="apply-button">Apply Now</button>
+      </Link>
+      <button className="language-button" onClick={toggleLanguage}>
+        {i18n.language === "az" ? "EN" : "AZ"}
+      </button>
+    </div>
+  </ul>
+</div>
+
       </div>
     </nav>
   );

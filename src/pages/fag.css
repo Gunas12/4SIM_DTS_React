@@ -58,7 +58,9 @@
   max-height: 200px;
   opacity: 1;
 }
-
+.tt {
+  font-size: 2.9rem;
+}
 /*----------------------*/
 @media (max-width: 768px) {
   .Fag {

@@ -15,7 +15,7 @@ function Fag() {
           <source src={Success} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="video-title" style={{ color: "white" }}>
+        <div className="video-title tt" style={{ color: "white" }}>
           <h3>Frequently </h3>
           <h3>Asked Question</h3>
         </div>

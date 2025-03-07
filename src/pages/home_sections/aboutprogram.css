@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .about-program-main-container {
   display: flex;
   flex-direction: row;
@@ -46,15 +50,54 @@
   margin-bottom: 20px;
 }
 
-.about-second-div h2 {
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
+@media screen and (max-width: 1024px) {
+  .about-program-main-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .about-first-div,
+  .about-second-div {
+    width: 90%;
+    text-align: center;
+  }
 }
 
-.about-second-div p {
-  color: white;
-  font-size: 14px;
-  text-align: center;
+@media screen and (max-width: 768px) {
+  .about-program-main-container {
+    padding: 20px;
+  }
+
+  .about-first-div h2 {
+    font-size: 24px;
+  }
+
+  .about-first-div p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .about-second-div img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-program-main-container {
+    padding: 10px;
+  }
+
+  .about-first-div h2 {
+    font-size: 22px;
+  }
+
+  .about-first-div p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about-second-div {
+    padding: 20px;
+  }
 }

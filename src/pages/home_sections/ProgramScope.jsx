@@ -5,11 +5,14 @@ const ProgramScope = () => {
   return (
     <div className="program-main-container" id="Scope">
       <div className="program-first-div">
-        <h2 style={{ textAlign: "center" }}> Program Scope</h2>
-        <p style={{ textAlign: "center" }}>
+        <h2 style={{ textAlign: "center" }} className="program-title">
+          {" "}
+          Program Scope
+        </h2>
+        <p style={{ textAlign: "center" }} className="program-descp">
           Companies selected for the program, referred to as Target Companies,{" "}
         </p>
-        <p style={{ textAlign: "center" }}>
+        <p style={{ textAlign: "center" }} className="program-descp">
           will receive tailored support to achieve five key objectives:
         </p>
       </div>

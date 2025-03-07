@@ -145,7 +145,7 @@ const ApplyForm = () => {
               required
             />
 
-            <button type="button" onClick={nextStep}>
+            <button type="button" onClick={nextStep} className="next">
               Next
             </button>
           </div>

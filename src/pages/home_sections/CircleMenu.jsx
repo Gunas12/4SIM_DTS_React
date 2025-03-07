@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../home_sections/circlemenu.css";
 import videoSource from "../../assets/videos/Your_paragraph_text.mp4";
-import AboutProgram from "./Aboutprogram";
 
 // import ProgramScope from "./programscope";
 

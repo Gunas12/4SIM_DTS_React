@@ -45,10 +45,7 @@ const Navbar = () => {
         <div className={`navbar-ul-div ${state.isOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <Link
-                to="/about"
-                onClick={() => dispatch({ type: "TOGGLE_MENU" })}
-              >
+              <Link to="/" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
                 About the Program
               </Link>
             </li>

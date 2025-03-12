@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "../home_sections/circlemenu.css";
 import videoSource from "../../assets/videos/button_video.mp4";
 
-// import ProgramScope from "./programscope";
-
 const VideoComponent = () => {
   const scrollToSection1 = () => {
     const section = document.getElementById("abouttt");

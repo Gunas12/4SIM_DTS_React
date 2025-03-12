@@ -7,7 +7,7 @@
 .video-home3 {
   position: relative;
   width: 100%;
-  height: 74vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
 
 .video-home3 video {
   width: 100%;
-  height: 74vh;
+  height: 100vh;
   object-fit: cover;
 }
 

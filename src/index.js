@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <SuccesStories />,
       },
       {
-        path: "about",
+        path: "",
         element: <About />,
       },
       {

@@ -20,8 +20,12 @@ function Fag() {
           <h3>Asked Question</h3>
         </div>
       </div>
+
       <div className="Fag">
         <div className="faq-container">
+          <h4>
+            <b>Frequently Asked Question</b>
+          </h4>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(0)}>
               When will I find out if my company is eligible for the program?

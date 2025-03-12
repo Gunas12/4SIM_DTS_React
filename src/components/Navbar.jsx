@@ -5,6 +5,7 @@ import logoAZ from "../assets/images/4simlogoaz.svg";
 import logoEng from "../assets/images/4simlogoen.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
+
 const menuReducer = (state, action) => {
   switch (action.type) {
     case "TOGGLE_MENU":
@@ -15,6 +16,7 @@ const menuReducer = (state, action) => {
 };
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [state, dispatch] = useReducer(menuReducer, { isOpen: false });
   const { i18n } = useTranslation();
 
@@ -30,9 +32,9 @@ const Navbar = () => {
         </Link>
         <div className="divider"></div>
         <div className="digital-div">
-          <p className="digital">Rəqəmsal</p>
-          <p className="digital">Transformasiya</p>
-          <p className="digital">Proqramı</p>
+          <p className="digital">{t('Digital')}</p>
+          <p className="digital">{t('Transformation')}</p>
+          <p className="digital">{t('Program')}</p>
         </div>
 
         <div
@@ -46,15 +48,15 @@ const Navbar = () => {
           <ul>
             <li>
               <Link to="/" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
-                About the Program
+                {t('About Program')}
               </Link>
             </li>
             <li>
               <Link
-                to="/eligibity"
+                to="/eligibility"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                Eligibility & Prioritization
+                {t('Eligibility & Prioritization')}
               </Link>
             </li>
             <li>
@@ -62,12 +64,12 @@ const Navbar = () => {
                 to="/successstories"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                Success Stories
+                {t('Success Stories')}
               </Link>
             </li>
             <li>
-              <Link to="/fag" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
-                FAQ
+              <Link to="/faq" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+                {t('FAQ')}
               </Link>
             </li>
             <li>
@@ -75,7 +77,7 @@ const Navbar = () => {
                 to="/contact"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                Contact us
+                {t('Contact us')}
               </Link>
             </li>
             <div className="navbar-buttons">
@@ -83,7 +85,7 @@ const Navbar = () => {
                 to="/apply"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                <button className="apply-button">Apply Now</button>
+                <button className="apply-button">{t('Apply Now')}</button>
               </Link>
               <button className="language-button" onClick={toggleLanguage}>
                 {i18n.language === "az" ? "EN" : "AZ"}

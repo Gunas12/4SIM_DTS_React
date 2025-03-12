@@ -32,9 +32,9 @@ const Navbar = () => {
         </Link>
         <div className="divider"></div>
         <div className="digital-div">
-          <p className="digital">{t('Digital')}</p>
-          <p className="digital">{t('Transformation')}</p>
-          <p className="digital">{t('Program')}</p>
+          <p className="digital">{t("Digital")}</p>
+          <p className="digital">{t("Transformation")}</p>
+          <p className="digital">{t("Program")}</p>
         </div>
 
         <div
@@ -48,15 +48,15 @@ const Navbar = () => {
           <ul>
             <li>
               <Link to="/" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
-                {t('About Program')}
+                {t("About Program")}
               </Link>
             </li>
             <li>
               <Link
-                to="/eligibility"
+                to="/eligibity"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                {t('Eligibility & Prioritization')}
+                {t("Eligibility & Prioritization")}
               </Link>
             </li>
             <li>
@@ -64,12 +64,12 @@ const Navbar = () => {
                 to="/successstories"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                {t('Success Stories')}
+                {t("Success Stories")}
               </Link>
             </li>
             <li>
-              <Link to="/faq" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
-                {t('FAQ')}
+              <Link to="/fag" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+                {t("FAQ")}
               </Link>
             </li>
             <li>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 to="/contact"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                {t('Contact us')}
+                {t("Contact us")}
               </Link>
             </li>
             <div className="navbar-buttons">
@@ -85,7 +85,7 @@ const Navbar = () => {
                 to="/apply"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                <button className="apply-button">{t('Apply Now')}</button>
+                <button className="apply-button">{t("Apply Now")}</button>
               </Link>
               <button className="language-button" onClick={toggleLanguage}>
                 {i18n.language === "az" ? "EN" : "AZ"}

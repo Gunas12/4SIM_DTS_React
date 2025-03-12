@@ -763,7 +763,43 @@ ipad air
   transform: scale(1.05);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.home-tab-buttons {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 999;
+}
 
+.home-tab-buttons button {
+  background: linear-gradient(135deg, #4077d8, #1e3a8a);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin-right: 15px;
+  width: 300px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid white;
+}
+
+.home-tab-buttons button:hover,
+.home-tab-buttons button.active {
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  transform: scale(1.05);
+}
+.home-sections {
+  position: relative;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+}
 @media (max-width: 1450px) {
   .circle {
     width: 135px;
@@ -808,5 +844,26 @@ ipad air
     width: 140px;
     height: 140px;
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+   .home-tab-buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+    top: 4px;
+    /* left: 45%; */
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
+
+  .home-tab-buttons button {
+    width: 70%;
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }

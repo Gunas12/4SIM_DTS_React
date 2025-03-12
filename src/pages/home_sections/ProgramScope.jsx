@@ -1,19 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import "./programScope.css";
 
 const ProgramScope = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="program-main-container" id="Scope">
       <div className="program-first-div">
         <h2 style={{ textAlign: "center" }} className="program-title">
-          {" "}
-          Program Scope
+          {t('Program Scope')}
         </h2>
         <p style={{ textAlign: "center" }} className="program-descp">
-          Companies selected for the program, referred to as Target Companies,{" "}
+          {t('Companies selected for the program, referred to as Target Companies,')}
         </p>
         <p style={{ textAlign: "center" }} className="program-descp">
-          will receive tailored support to achieve five key objectives:
+          {t('will receive tailored support to achieve five key objectives:')}
         </p>
       </div>
       <div className="program-second-div">
@@ -23,11 +25,9 @@ const ProgramScope = () => {
             alt=""
             className="scope-img"
           />
-          <h3 className="scope-title">Digital Maturity Assessment</h3>
+          <h3 className="scope-title">{t('Digital Maturity Assessment')}</h3>
           <p className="scope-descp">
-            Evaluating Target Companies' existing digital capabilites,
-            infastructue, and readliness to identify gaps and areas for
-            improvment
+            {t('Evaluating Target Companies\' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement')}
           </p>
         </div>
         <div className="first-scope">
@@ -36,11 +36,9 @@ const ProgramScope = () => {
             alt=""
             className="scope-img"
           />
-          <h3 className="scope-title">Digital Transformation Roadmap</h3>
+          <h3 className="scope-title">{t('Digital Transformation Roadmap')}</h3>
           <p className="scope-descp">
-            Developing a strategic plan that outlines key initiatives, estimates
-            budgets, implementation steps, and guidance on selecting third-party
-            solution providers
+            {t('Developing a strategic plan that outlines key initiatives, estimates budgets, implementation steps, and guidance on selecting third-party solution providers')}
           </p>
         </div>
         <div className="first-scope">
@@ -49,24 +47,20 @@ const ProgramScope = () => {
             alt=""
             className="scope-img"
           />
-          <h3 className="scope-title">Digital Capability Building</h3>
+          <h3 className="scope-title">{t('Digital Capability Building')}</h3>
           <p className="scope-descp">
-            Evaluating Target Companies' existing digital capabilites,
-            infastructue, and readliness to identify gaps and areas for
-            improvment
+            {t('Evaluating Target Companies\' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement')}
           </p>
         </div>
         <div className="first-scope">
           <img
-            src="  https://cdn.prod.website-files.com/661d3eb71206816721de681d/66f5774f59de0108f3f91a0f_geospatial_analytics.1.webp"
+            src="https://cdn.prod.website-files.com/661d3eb71206816721de681d/66f5774f59de0108f3f91a0f_geospatial_analytics.1.webp"
             alt=""
             className="scope-img"
           />
-          <h3 className="scope-title">Implementation Support</h3>
+          <h3 className="scope-title">{t('Implementation Support')}</h3>
           <p className="scope-descp">
-            Evaluating Target Companies' existing digital capabilites,
-            infastructue, and readliness to identify gaps and areas for
-            improvment
+            {t('Evaluating Target Companies\' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement')}
           </p>
         </div>
         <div className="first-scope">
@@ -75,11 +69,9 @@ const ProgramScope = () => {
             alt=""
             className="scope-img"
           />
-          <h3 className="scope-title">Financial Assistance</h3>
+          <h3 className="scope-title">{t('Financial Assistance')}</h3>
           <p className="scope-descp">
-            Evaluating Target Companies' existing digital capabilites,
-            infastructue, and readliness to identify gaps and areas for
-            improvment
+            {t('Evaluating Target Companies\' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement')}
           </p>
         </div>
       </div>

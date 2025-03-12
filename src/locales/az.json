@@ -166,25 +166,25 @@
   "Declaration & Consent": "Bəyannamə və Razılıq",
   "I confirm that the information provided is accurate to the best of my knowledge.": "Təqdim olunan məlumatların mənim məlumatımda düzgün olduğunu təsdiq edirəm.",
   "I agree to be contacted by 4SIM regarding my application.": "Müraciətimlə əlaqədar 4SIM tərəfindən əlaqə saxlanmasını qəbul edirəm.",
-"Select an option": "Seçim edin",
-    "Up to 3M": "3M-ə qədər",
-    "3M-30M": "3M-30M",
-    "30M+": "30M+",
-    "1 = No digital tool used": "1 = Heç bir rəqəmsal alət istifadə edilməyib",
-    "5 = Fully digital & automated processes": "5 = Tamamilə rəqəmsal və avtomatlaşdırılmış proseslər",
-    "Other": "Digər",
-    "Food & beverages": "Qida və içkilər",
-    "Refined petroleum products": "Təmizlənmiş neft məhsulları",
-    "Chemicals": "Kimyəvi maddələr",
-    "Other non-metallic mineral products": "Digər qeyri-metalik minerallar məhsulları",
-    "Basic metals": "Əsas metalları",
-    "Repair and installation of machinery and equipment": "Maşın və avadanlıqların təmiri və quraşdırılması",
-    "Rubber & plastic Products": "Kauçuk və plastik məhsullar",
-    "Textiles": "Tekstil",
-    "Machinery & equipment": "Maşın və avadanlıqlar",
-    "Electrical equipment": "Elektrik avadanlıqları",
-    "Submit": "Təqdim etmək",
-    "Digital": "Rəqəmsal",
+  "Select an option": "Seçim edin",
+  "Up to 3M": "3M-ə qədər",
+  "3M-30M": "3M-30M",
+  "30M+": "30M+",
+  "1 = No digital tool used": "1 = Heç bir rəqəmsal alət istifadə edilməyib",
+  "5 = Fully digital & automated processes": "5 = Tamamilə rəqəmsal və avtomatlaşdırılmış proseslər",
+  "Other": "Digər",
+  "Food & beverages": "Qida və içkilər",
+  "Refined petroleum products": "Təmizlənmiş neft məhsulları",
+  "Chemicals": "Kimyəvi maddələr",
+  "Other non-metallic mineral products": "Digər qeyri-metalik minerallar məhsulları",
+  "Basic metals": "Əsas metalları",
+  "Repair and installation of machinery and equipment": "Maşın və avadanlıqların təmiri və quraşdırılması",
+  "Rubber & plastic Products": "Kauçuk və plastik məhsullar",
+  "Textiles": "Tekstil",
+  "Machinery & equipment": "Maşın və avadanlıqlar",
+  "Electrical equipment": "Elektrik avadanlıqları",
+  "Submit": "Təqdim etmək",
+  "Digital": "Rəqəmsal",
   "Transformation": "Transformasiya",
   "Program": "Proqramı",
   "Eligibility & Prioritization": "Uyğunluq və Prioritetləşdirmə",
@@ -196,23 +196,9 @@
   "It provides funding, capability-building support, and expert guidance to accelerate digital adoption across industries.": "Proqram, sənayelər arasında rəqəmsal tətbiqin sürətləndirilməsi üçün maliyyə dəstəyi, qabiliyyətlərin artırılması və ekspert rəhbərliyi təklif edir.",
   "Through structured assessments, strategic roadmaps, financial assistance, and ongoing mentorship,": "Strukturlaşdırılmış qiymətləndirmələr, strateji yol xəritələri, maliyyə yardımı və davam edən mentorluq vasitəsilə,",
   "The Digital Transformation Support Program equips businesses with the tools needed to thrive in the digital era.": "Rəqəmsal Transformasiya Dəstək Proqramı, müəssisələri rəqəmsal dövrdə uğur qazanmaq üçün lazım olan vasitələrlə təchiz edir.",
-    "Companies selected for the program, referred to as Target Companies,": "Proqram üçün seçilən və Hədəf Şirkətləri adlandırılan şirkətlər,",
-    "will receive tailored support to achieve five key objectives:": "beş əsas məqsədə çatmaq üçün xüsusi dəstək alacaqlar:",
-    "Evaluating Target Companies' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement": "Hədəf Şirkətlərinin mövcud rəqəmsal bacarıqları, infrastruktur və hazırlıq vəziyyətini qiymətləndirərək boşluqları və inkişaf sahələrini müəyyənləşdirmək"
-   
-  
-  
+  "Companies selected for the program, referred to as Target Companies,": "Proqram üçün seçilən və Hədəf Şirkətləri adlandırılan şirkətlər,",
+  "will receive tailored support to achieve five key objectives:": "beş əsas məqsədə çatmaq üçün xüsusi dəstək alacaqlar:",
+  "Evaluating Target Companies' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement": "Hədəf Şirkətlərinin mövcud rəqəmsal bacarıqları, infrastruktur və hazırlıq vəziyyətini qiymətləndirərək boşluqları və inkişaf sahələrini müəyyənləşdirmək",
 
-
-
-
-
-  
-
-
-
-
-
-
-
+  "2025. All rights reserved.": "2025. Bütün hüquqlar qorunur."
 }

@@ -4,8 +4,11 @@ import videoSource from "../../assets/videos/button_video.mp4";
 import ProgramScope from "../home_sections/ProgramScope";
 import AboutProgram from "../home_sections/aboutprogram";
 import MissionVision from "./MissionVision";
+import { useTranslation } from "react-i18next";
+
 const VideoComponent = () => {
   const [activeTab, setActiveTab] = useState("about");
+  const { t } = useTranslation();
 
   return (
     <div className="video-container">
@@ -20,19 +23,19 @@ const VideoComponent = () => {
             className={activeTab === "about" ? "active" : ""}
             onClick={() => setActiveTab("about")}
           >
-            About Program
+           {t('About Program')}
           </button>
           <button
             className={activeTab === "scope" ? "active" : ""}
             onClick={() => setActiveTab("scope")}
           >
-            Program Scope
+{t('Program Scope')}
           </button>
           <button
             className={activeTab === "mission" ? "active" : ""}
             onClick={() => setActiveTab("mission")}
           >
-            Mission & Vision
+           {t("Mission")}
           </button>
         </div>
 

@@ -74,7 +74,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/contact"
+                to="https://4sim.gov.az/az/page/haqqimzda/elaqe"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
                 {t("Contact us")}

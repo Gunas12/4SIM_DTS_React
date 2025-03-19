@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../home_sections/circlemenu.css";
-import videoSource from "../../assets/videos/button_video.mp4";
+import videoSource from "../home_sections/home_video.mp4";
 import ProgramScope from "../home_sections/ProgramScope";
 import AboutProgram from "../home_sections/aboutprogram";
 import MissionVision from "./MissionVision";
@@ -12,7 +12,9 @@ const VideoComponent = () => {
 
   return (
     <div className="video-container">
-      <video autoPlay muted loop>
+      <video 
+      className="salam"
+      autoPlay muted loop>
         <source src={videoSource} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

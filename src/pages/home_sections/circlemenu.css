@@ -704,14 +704,13 @@ ipad air
 .video-containerr {
   position: relative;
   width: 100%;
-  height: auto;
   overflow: hidden;
   padding-bottom: 50px;
 }
 
-.video-containerr video {
+.salam{
   width: 100%;
-  height: auto;
+  height: 8%;
   display: block;
 }
 

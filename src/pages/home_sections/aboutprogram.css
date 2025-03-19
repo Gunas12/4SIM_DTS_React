@@ -45,10 +45,13 @@ html, body {
   border-radius: 10px;
 }
 
-.about-second-div img {
-  max-width: 400px;
+.about-second-div video {
+  max-width: 100%; 
+  width: 100%;
+  height: auto;
   margin-bottom: 20px;
 }
+
 
 @media screen and (max-width: 1180px) {
   .about-program-main-container {

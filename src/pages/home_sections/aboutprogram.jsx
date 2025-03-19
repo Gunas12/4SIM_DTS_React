@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import AboutVideo from "../home_sections/about_program.mp4";
 import "./aboutprogram.css";
 
 const AboutProgram = () => {
@@ -24,11 +25,11 @@ const AboutProgram = () => {
         </p>
       </div>
       <div className="about-second-div">
-        <img
-          src="https://www.azernews.az/media/2024/09/23/274705251_150756944008687_398029669719136241_n.jpg"
-          alt=""
-        />
-      </div>
+ <video autoPlay muted loop>
+          <source src={AboutVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+              </div>
     </div>
   );
 };

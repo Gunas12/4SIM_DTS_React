@@ -114,6 +114,7 @@ const ApplyForm = () => {
               value={formData.yearsOfEstablishment}
               onChange={handleChange}
               required
+              className="select"
             >
               <option value=""></option>
               {Array.from({ length: 100 }, (_, i) => {
@@ -142,6 +143,14 @@ const ApplyForm = () => {
               onChange={handleChange}
               required
             />
+            <label>{t('Website (if applicable)')}</label>
+            <input
+              type="text"
+              name="website"
+              value={formData.city}
+              onChange={handleChange}
+              required
+            />
 
             <label>{t('Primary Contact Person')}</label>
             <input
@@ -152,6 +161,14 @@ const ApplyForm = () => {
               required
             />
 
+            <label>{t('Contact Email')}</label>
+            <input
+              type="text"
+              name="contactEmail"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />      
             <label>{t('Phone Number')}</label>
             <input
               type="tel"
@@ -169,9 +186,7 @@ const ApplyForm = () => {
 
 {step === 2 && (
   <div className="form-div">
-    <h2 className="industry">
-      <label>{t('Years of Establishment')}</label>
-    </h2>
+            <h2 className="industry">{t('Ownership & Legal structure')}</h2>
     <label>{t('Company type(LLC, JSC, Individual Entrepreneur, etc.)')}</label>
     <input
       type="text"
@@ -193,10 +208,10 @@ const ApplyForm = () => {
       required
     />
 
-    <label>{t('Percentage of Local Ownership: %')}</label>
+    <label>{t('Company shareholders (Optional)')}</label>
     <input
-      type="number"
-      name="yearsOfEstablishment"
+      type="text"
+      name="stakeholders"
       value={formData.yearsOfEstablishment}
       onChange={handleChange}
       required
@@ -210,7 +225,10 @@ const ApplyForm = () => {
         value={formData.industrySector}
         onChange={handleChange}
         required
+        className="select"
+
       >
+        <option value="">{t('')}</option>
         <option value="">{t('Food & beverages')}</option>
         <option value="IT">{t('Refined petroleum products')}</option>
         <option value="Manufacturing">{t('Chemicals')}</option>
@@ -223,7 +241,7 @@ const ApplyForm = () => {
         <option value="Other">{t('Electrical equipment')}</option>
       </select>
 
-      <label>{t('Main products/services')}</label>
+      <label>{t('Main products/ services')}</label>
       <input
         type="text"
         name="registrationNumber"
@@ -318,7 +336,7 @@ const ApplyForm = () => {
           required
           className="select"
         >
-          <option value="">{t('Select an option')}</option>
+          <option value="">{t('')}</option>
           <option value="1-10">1-10</option>
           <option value="11-50">11-50</option>
           <option value="51-250">51-250</option>
@@ -335,7 +353,7 @@ const ApplyForm = () => {
           required
           className="select"
         >
-          <option value="">{t('Select an option')}</option>
+          <option value="">{t('')}</option>
           <option value="Up to 3M">{t('Up to 3M')}</option>
           <option value="3M-30M">{t('3M-30M')}</option>
           <option value="30M+">{t('30M+')}</option>
@@ -355,8 +373,8 @@ const ApplyForm = () => {
           required
           className="select"
         >
-          <option value="">{t('Select an option')}</option>
-          <option value="1">{t('1 = No digital tools used')}</option>
+          <option value="">{t('')}</option>
+          <option value="1">{t('1 = No digital tool used')}</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
@@ -373,7 +391,7 @@ const ApplyForm = () => {
           required
           className="select"
         >
-          <option value="">{t('Select an option')}</option>
+          <option value="">{t('')}</option>
           <option value="ERP">ERP</option>
           <option value="CRM">CRM</option>
           <option value="Cloud">Cloud</option>
@@ -428,46 +446,106 @@ const ApplyForm = () => {
 
 {step === 4 && (
   <div className="form-div">
-    <h2>{t('Leadership & Commitment')}</h2>
+    <h2 className="industry">{t('Leadership & Commitment')}</h2>
     
-    <label>{t('Does your company have dedicated digital transformation leader or team?')}</label>
-    <input
-      type="text"
-      name="companyName"
-      value={formData.companyName}
-      onChange={handleChange}
-      required
-    />
+    <label>{t('Does your company have dedicated digital transformation leader or team?(Yes/No)')}</label>
+    <label>
+  <input
+    type="checkbox"
+    name="companyName"
+    value="Yes"
+    checked={formData.companyName === 'Yes'}
+    onChange={handleChange}
+    className="confirm-checkbox"
+  />
+  {t('Yes')}
+</label>
+<label>
+  <input
+    type="checkbox"
+    name="companyName"
+    value="No"
+    checked={formData.companyName === 'No'}
+    onChange={handleChange}
+    className="confirm-checkbox"
+  />
+  {t('No')}
+</label>
+
     
-    <label>{t('Has your company previously developed a digital transformation strategy or roadmap?')}</label>
-    <input
-      type="text"
-      name="registrationNumber"
-      value={formData.registrationNumber}
-      onChange={handleChange}
-      required
-    />
+    <label>{t('Has your company previously developed a digital transformation strategy or roadmap?(Yes/No)')}</label>
+    <label>
+  <input
+    type="checkbox"
+    name="companyName"
+    value="Yes"
+    checked={formData.companyName === 'Yes'}
+    onChange={handleChange}
+    className="confirm-checkbox"
+  />
+  {t('Yes')}
+</label>
+<label>
+  <input
+    type="checkbox"
+    name="companyName"
+    value="No"
+    checked={formData.companyName === 'No'}
+    onChange={handleChange}
+    className="confirm-checkbox"
+  />
+  {t('No')}
+</label>
     
-    <label>{t('Are senior executives committed to implementing digital transformation strategy?')}</label>
-    <input
-      type="number"
-      name="yearsOfEstablishment"
-      value={formData.yearsOfEstablishment}
-      onChange={handleChange}
-      required
-    />
+    <label>{t('Are senior executives committed to implementing digital transformation strategy?(Yes/No)')}</label>
+    <label>
+  <input
+    type="checkbox"
+    name="companyName"
+    value="Yes"
+    checked={formData.companyName === 'Yes'}
+    onChange={handleChange}
+    className="confirm-checkbox"
+  />
+  {t('Yes')}
+</label>
+<label>
+  <input
+    type="checkbox"
+    name="companyName"
+    value="No"
+    checked={formData.companyName === 'No'}
+    onChange={handleChange}
+    className="confirm-checkbox"
+  />
+  {t('No')}
+</label>
 
     <div>
       <h2 className="industry">{t('Funding & Financial support needs')}</h2>
       <label>{t('Would your company require financial assistance for implementation?')}</label>
-      <input
-        type="text"
-        name="companyName"
-        value={formData.companyName}
-        onChange={handleChange}
-        required
-      />
-
+      <label>
+  <input
+    type="checkbox"
+    name="companyName"
+    value="Yes"
+    checked={formData.companyName === 'Yes'}
+    onChange={handleChange}
+    className="confirm-checkbox"
+  />
+  {t('Yes')}
+</label>
+<label>
+  <input
+    type="checkbox"
+    name="companyName"
+    value="No"
+    checked={formData.companyName === 'No'}
+    onChange={handleChange}
+    className="confirm-checkbox"
+  />
+  {t('No')}
+</label>
       <label>{t('Estimated budget required for digital transformation (If known)')}</label>
       <input
         type="text"
@@ -490,31 +568,51 @@ const ApplyForm = () => {
     <form onSubmit={handleSubmit}>
       <div>
         <label>{t('Company Registration Certification:')}</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "companyRegistration")}
-        />
+        <div>
+  <label className="custom-file-upload" htmlFor="companyRegistration">
+    {t('Upload')}
+  </label>
+  <input
+    type="file"
+    id="companyRegistration"
+    onChange={(e) => handleFileChange(e, "companyRegistration")}
+    style={{ display: "none" }}
+  />
+</div>
+
       </div>
       <div>
         <label>{t('Financial Statements (last 2 years):')}</label>
-        <input
-          type="file"
-          onChange={(e) => handleFileChange(e, "financialStatements")}
-        />
+        <div>
+  <label className="custom-file-upload"  htmlFor="companyRegistration">
+    {t('Upload')}
+  </label>
+  <input
+    type="file"
+    id="companyRegistration"
+    onChange={(e) => handleFileChange(e, "companyRegistration")}
+    style={{ display: "none" }}
+  />
+</div>
       </div>
       <div>
         <label>{t('Existing Digital Transformation Plans (if available):')}</label>
-        <input
-          type="file"
-          onChange={(e) =>
-            handleFileChange(e, "digitalTransformationPlans")
-          }
-        />
+        <div>
+  <label className="custom-file-upload" htmlFor="companyRegistration">
+    {t('Upload')}
+  </label>
+  <input
+    type="file"
+    id="companyRegistration"
+    onChange={(e) => handleFileChange(e, "companyRegistration")}
+    style={{ display: "none" }}
+  />
+</div>
       </div>
 
       <div>
         <h2 className="industry">{t('Declaration & Consent')}</h2>
-        <label>
+        <label  className="confirm-text">
           <input
             type="checkbox"
             name="confirmInfo"
@@ -526,7 +624,8 @@ const ApplyForm = () => {
         </label>
       </div>
       <div>
-        <label>
+        <label  className="confirm-text"
+        >
           <input
             type="checkbox"
             name="consentContact"
@@ -541,7 +640,7 @@ const ApplyForm = () => {
   </div>
 )}
 
-       
+       <div className="son-buttons">
         {step > 1 && (
           <button type="button" onClick={prevStep} className="back">
             {t('Back')}
@@ -553,6 +652,7 @@ const ApplyForm = () => {
             {t('Submit')}
           </button>
         )}
+        </div>
       </form>
     </div>
   );

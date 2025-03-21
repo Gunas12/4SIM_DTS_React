@@ -10,15 +10,15 @@ const App = () => {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <VideoOverlay onVideoEnd={() => setLoading(false)} />
-      ) : (
+      ) : ( */}
         <>
           <Navbar />
           <Outlet />
           <Footer />
         </>
-      )}
+      {/* // )} */}
     </>
   );
 };

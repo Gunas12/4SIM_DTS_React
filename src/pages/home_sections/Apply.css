@@ -38,7 +38,9 @@ label {
   margin-bottom: 8px;
   color: #333;
 }
-
+.custom-file-upload{
+  color:#333;
+}
 input,
 select,
 textarea {
@@ -71,19 +73,21 @@ label {
 }
 
 .confirm-checkbox {
+  
   width: 4%;
+  border: 2px solid #007bff; 
 }
 
+.confirm-text{
+  color: #004aad;;
+}
 .key-checkbox {
   width: 10%;
 }
 
-select {
-  width: 25%;
-}
 
 .select {
-  width: 100%;
+  width: 52%;
 }
 
 .form-div select {
@@ -126,7 +130,10 @@ textarea:focus {
   margin-top: 15px;
   transition: background 0.3s, transform 0.2s;
 }
-
+.son-buttons{
+  display: flex;
+  flex-direction: column;
+}
 button:hover {
   background: linear-gradient(135deg, #0056b3, #004099);
   transform: scale(1.02);
@@ -137,10 +144,19 @@ button:hover {
   flex-direction: column;
   gap: 5px;
 }
+.custom-file-upload {
+  width:80px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid  #004aad;; 
+  text-align: center;
+}
 
-@media (max-width: 1200px) {
+
+@media (max-width: 1367px) {
   .form-div {
-    margin-left: 50px;
+    margin-left: 0px;
   }
 
   .apply-form {
@@ -151,32 +167,51 @@ button:hover {
     width: 70%;
   }
 
-  select {
-    width: 70%;
+  .select {
+    width: 73%;
+    border: 8px; 
+    height: 44px;
+  }
+  .company-size-container{
+    display: flex;
+  flex-direction: column;
+  gap: 20px;
   }
 
   .next,
   .back,
   .submit-button {
-    width: 100%;
-    margin-left: 0;
+    width:70%;
+    margin-left: 0px;
+  }
+  .back{
+    width: 70%;
+    margin-left: 0px;
   }
   .confirm-checkbox {
-    width: 10%;
+    width: 4%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .form-div {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   input,
   select,
   textarea {
-    width: 100%;
+    width: 85%;
+  }
+  .select{
+    width: 90%;
   }
 
+.company-size-container{
+  display: flex;
+flex-direction: column;
+gap: 20px;
+}
   .apply-form {
     padding: 20px;
   }
@@ -188,8 +223,16 @@ button:hover {
   .next,
   .back,
   .submit-button {
-    width: 100%;
+    width: 58%;
     padding: 10px 0;
+    margin-left: 0px;
+  }
+  .back
+  {
+    width: 59%;
+    padding: 10px 0;
+    margin-left: 0px;
+
   }
 
   .checkbox-group {
@@ -209,27 +252,109 @@ button:hover {
     font-size: 18px;
   }
   .industry {
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 10px;
   }
   .form-container {
-    margin-top: 60px;
+    max-width: 1000px;
+    margin: 0px 20px;
+    padding: 10px;
   }
   .form-div {
-    margin-left: 0;
-  }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+  } 
 
   .next,
   .back,
   .submit-button {
-    width: 100%;
+    width: 90%;
     padding: 12px;
+    margin-left: 0px;
+  }
+  .back{
+    width: 90%;
+    margin-left: 0px;
+  }
+  .submit-button{
+    width: 90%;
+    margin-left: 0px;
   }
 
   input,
   select,
   textarea {
     font-size: 14px;
+  }
+  .select {
+    width: 95%;
+    border: 8px; 
+    height: 44px;
+  }
+  .confirm-checkbox {
+    width: 10%;
+  }
+  .company-size-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 376px) {
+  .form-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+  } 
+  .apply-form {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+  .industry {
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+  .form-container {
+    max-width: 1000px;
+    margin: 0px 20px;
+    padding: 10px;
+  }
+  
+
+  .next,
+  .back,
+  .submit-button {
+    width: 90%;
+    padding: 12px;
+    margin-left: 0px;
+  }
+  .back{
+    width: 90%;
+    margin-left: 0px;
+  }
+  .submit-button{
+    width: 90%;
+    margin-left: 0px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+  .select {
+    width: 95%;
+    border: 8px; 
+    height: 44px;
   }
   .confirm-checkbox {
     width: 10%;

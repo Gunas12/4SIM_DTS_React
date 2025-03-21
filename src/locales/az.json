@@ -126,7 +126,7 @@
   "Primary Contact Person": "Əsas Əlaqə Şəxsi",
   "Phone Number": "Telefon Nömrəsi",
   "Next": "Növbəti",
-  "Ownership & Legal structure": "Sahibliyi və Hüquqi Struktur",
+  "Ownership & Legal structure": "Mülkiyyət və Hüquqi quruluş",
   "Company type(LLC, JSC, Individual Entrepreneur, etc.)": "Şirkət növü (MMC, ASC, Fərdi Sahibkar və s.)",
   "Percentage of Local Ownership: %": "Yerləşmə Sahibkarlığının Faizi: %",
   "Company shareholders (Optional)": "Şirkət Sahibləri (İstəyə bağlı)",
@@ -139,7 +139,7 @@
   "Key Export Markets(If applicable)": "Əsas İxrac Bazarlari (Əgər tətbiq olunarsa)",
   "Back": "Geri",
   "Company size": "Şirkət Ölçüsü",
-  "Number of full-time employees": "Tam Şəxsi İşçilərin Sayı",
+  "Number of full-time employees": "Tam Ştatlı İşçilərin Sayı",
   "Annual turnover (AZN)": "İllik Dövriyyə (AZN)",
   "Digital Readiness & Transformation Needs": "Rəqəmsal Hazırlıq və Transformasiya Ehtiyacları",
   "Current level of digitalization": "Mövcud Rəqəmsallaşma Səviyyəsi",
@@ -152,11 +152,11 @@
   "Infrastructure limitations": "İnfrastruktur Məhdudiyyətləri",
   "What are your company’s main digital transformation goals? (Short answer)": "Şirkətinizin əsas rəqəmsal transformasiya məqsədləri nədir? (Qısa cavab)",
   "Leadership & Commitment": "Liderlik və Öhdəlik",
-  "Does your company have dedicated digital transformation leader or team?": "Şirkətinizin rəqəmsal transformasiya lideri və ya komandası varmı?",
+  "Does your company have dedicated digital transformation leader or team?(Yes/No)": "Şirkətinizin rəqəmsal transformasiya lideri və ya komandası varmı?(Bəli/Xeyr)",
   "Funding & Financial support needs": "Maliyyə və Maddi Dəstək Ehtiyacları",
   "Would your company require financial assistance for implementation?": "Şirkətinizin həyata keçirilməsi üçün maliyyə yardımına ehtiyacı varmı?",
-  "Are senior executives committed to implementing digital transformation strategy?": "Yüksək səviyyəli rəhbərlər rəqəmsal transformasiya strategiyasının həyata keçirilməsinə sadiqdirlərmi?",
-  "Has your company previously developed a digital transformation strategy or roadmap?": "Şirkətiniz əvvəllər rəqəmsal transformasiya strategiyası və ya yol xəritəsi hazırlayıbmı?",
+  "Are senior executives committed to implementing digital transformation strategy?(Yes/No)": "Yüksək səviyyəli rəhbərlər rəqəmsal transformasiya strategiyasının həyata keçirilməsinə sadiqdirlərmi?(Bəli/Xeyr)",
+  "Has your company previously developed a digital transformation strategy or roadmap?(Yes/No)": "Şirkətiniz əvvəllər rəqəmsal transformasiya strategiyası və ya yol xəritəsi hazırlayıbmı?(Bəli/Xeyr)",
 
   "Estimated budget required for digital transformation (If known)": "Rəqəmsal transformasiya üçün tələb olunan təxmini büdcə (məlumdursa)",
   "Additional Supporting Document": "Əlavə Dəstək Sənədi",
@@ -201,5 +201,11 @@
   "Evaluating Target Companies' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement": "Hədəf Şirkətlərinin mövcud rəqəmsal bacarıqları, infrastruktur və hazırlıq vəziyyətini qiymətləndirərək boşluqları və inkişaf sahələrini müəyyənləşdirmək",
 
   "2025. All rights reserved.": "2025. Bütün hüquqlar qorunur.",
-  "Industry 4.0": "Sənaye 4.0"
+  "Industry 4.0": "Sənaye 4.0",
+  "Website (if applicable)": "Veb sayt (əgər varsa)",
+  "Contact Email": "Əlaqə E-poçtu",
+  "Upload":"Yüklə"
+
+
+
 }

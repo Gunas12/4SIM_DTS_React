@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
 html, body {
   overflow-x: hidden;
   width: 100%;
+  font-family: 'Poppins', sans-serif; 
+
 }
 .about-program-main-container {
   display: flex;
@@ -9,20 +13,20 @@ html, body {
   align-items: center;
   width: 100%;
   padding: 40px;
-  margin-top: 20px;
-  height: 100vh;
 }
 
 .about-first-div {
   width: 50%;
 }
-
-.about-first-div h2 {
+.about-program-title{
+  font-size: 44px;
   color: #0645ad;
-  font-size: 28px;
   font-weight: bold;
 }
 
+.home-section{
+  padding: 0px;
+}
 .about-first-div p {
   font-size: 20px;
   line-height: 30px;
@@ -61,7 +65,16 @@ html, body {
     padding: 0px;
     /* margin-top: 50px; */
   }
+  .about-first-div h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
 
+  .about-first-div p {
+    font-size: 24px;
+    line-height: 36px;
+  }
   .about-first-div,
   .about-second-div {
     width: 90%;
@@ -79,11 +92,11 @@ html, body {
     flex-direction: column;
     justify-content: center;
     padding: 0px;
-    margin-top: 220px;
+    margin-top: 0px;
   }
 
   .about-first-div h2 {
-    font-size: 24px;
+    font-size: 40px;
   }
 
   .about-first-div p {
@@ -101,7 +114,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     padding: 0px;
-    margin-top: 260px;
+    margin-top: 0px;
     margin-bottom: 50px;
   }
 
@@ -125,15 +138,19 @@ html, body {
     flex-direction: column;
     justify-content: center;
     padding: 0px;
-    margin-top: 220px;
+    margin-top: 0px;
   }
 
   .about-first-div h2 {
-    font-size: 22px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+
   }
 
   .about-first-div p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
   }
 
@@ -147,15 +164,15 @@ html, body {
     flex-direction: column;
     justify-content: center;
     padding: 0px;
-    margin-top: 340px;
+    margin-top: 0px;
   }
 
   .about-first-div h2 {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .about-first-div p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
   }
 

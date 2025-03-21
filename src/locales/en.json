@@ -155,9 +155,11 @@
   "Infrastructure limitations": "Infrastructure limitations",
   "What are your company’s main digital transformation goals? (Short answer)": "What are your company’s main digital transformation goals? (Short answer)",
   "Leadership & Commitment": "Leadership & Commitment",
-  "Does your company have dedicated digital transformation leader or team?": "Does your company have a dedicated digital transformation leader or team?",
+  "Does your company have dedicated digital transformation leader or team?(Yes/No)": "Does your company have dedicated digital transformation leader or team?(Yes/No)",
   "Funding & Financial support needs": "Funding & Financial support needs",
+  "Are senior executives committed to implementing digital transformation strategy?(Yes/No)":"Are senior executives committed to implementing digital transformation strategy?(Yes/No)",
   "Would your company require financial assistance for implementation": "Would your company require financial assistance for implementation",
+  "Has your company previously developed a digital transformation strategy or roadmap?(Yes/No)" :"Has your company previously developed a digital transformation strategy or roadmap?(Yes/No)",
   "Estimated budget required for digital transformation (If known)": "Estimated budget required for digital transformation (If known)",
   "Additional Supporting Document": "Additional Supporting Document",
   "Company Registration Certification:": "Company Registration Certification:",
@@ -198,5 +200,9 @@
   "The Digital Transformation Support Program equips businesses with the tools needed to thrive in the digital era.": "The Digital Transformation Support Program equips businesses with the tools needed to thrive in the digital era.",
 
   "2025. All rights reserved.": "2025. All rights reserved.",
-  "Industry 4.0": "Industry 4.0"
+  "Industry 4.0": "Industry 4.0",
+  "Website (if applicable)": "Website (if applicable)",
+  "Contact Email": "Contact Email",
+  "Upload":"Upload"
+
 }

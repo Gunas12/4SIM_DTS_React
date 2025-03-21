@@ -704,14 +704,22 @@ ipad air
 .video-containerr {
   position: relative;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   padding-bottom: 50px;
 }
+.video-div {
+  height: 700px;
+  overflow: hidden; 
+  position: relative; 
+}
 
-.salam{
+.about-video {
   width: 100%;
-  height: 8%;
-  display: block;
+  height: 100%;
+  position: absolute; 
+  bottom: 0; 
+  object-fit: cover; 
 }
 
 .circle-menu {
@@ -793,12 +801,28 @@ ipad air
 }
 .home-sections {
   position: relative;
-  padding-top: 60px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -20px;
 }
+/*animation*/
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.about-video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1450px) {
   .circle {
     width: 135px;
@@ -807,7 +831,20 @@ ipad air
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1367px) {
+  .video-div {
+    height: 600px;
+    overflow: hidden; 
+    position: relative; 
+  }
+  .about-video {
+    width: 100%;
+  height: 100%;
+  position: absolute; 
+  bottom: 0; 
+  object-fit: cover; 
+  border-radius:0px;
+  }
   .circle-menu {
     right: 5%;
     height: auto;
@@ -823,6 +860,11 @@ ipad air
 }
 
 @media (max-width: 1000px) {
+  .about-video {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+  }
   .video-containerr {
     height: 100vh;
     overflow: hidden;
@@ -846,6 +888,18 @@ ipad air
   }
 }
 @media (max-width: 768px) {
+  .video-div {
+    height: 400px;
+    overflow: hidden; 
+    position: relative; 
+  }
+  .about-video {
+    width: 100%;
+  height: 100%;
+  position: absolute; 
+  bottom: 0; 
+  object-fit: cover; 
+  }
    .home-tab-buttons {
     flex-direction: column;
     align-items: center;
@@ -865,4 +919,41 @@ ipad air
     font-size: 1rem;
     padding: 10px 20px;
   }
+ 
+}
+
+
+@media (max-width: 500px) {
+  .video-div {
+    height: 400px;
+    overflow: hidden; 
+    position: relative; 
+  }
+  .about-video {
+    width: 100%;
+  height: 100%;
+  position: absolute; 
+  bottom: 0; 
+  object-fit: cover; 
+  }
+  .home-tab-buttons {
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px;
+   width: 80%;
+   top: 4px;
+   /* left: 45%; */
+   position: absolute;
+   top: -5px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 9;
+ }
+
+ .home-tab-buttons button {
+   width: 70%;
+   font-size: 1rem;
+   padding: 10px 20px;
+ }
+
 }

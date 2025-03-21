@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Poppins', sans-serif; 
+}
+
 .program-main-container {
   background-color: #eaeaea;
   padding-top: 50px;
-  font-family: "Arial", sans-serif;
+  /* font-family: "Arial", sans-serif; */
 }
 .program-title {
   font-size: 40px;
 }
 .program-descp {
-  font-size: 20px;
+  font-size: 24px;
 }
 .program-second-div {
   display: flex;
@@ -36,26 +44,37 @@
 .scope-title {
   color: rgb(97, 97, 210);
   margin-top: 20px;
+  font-size: 20px;
 }
 
 .scope-descp {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
+  color:  #333;;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1366px) {
   .first-scope {
     width: 45%;
+  }
+  .program-second-div {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+  justify-content: center;
+    width: 95%;
   }
 }
 
 @media screen and (max-width: 769px) {
   .program-main-container{
-    margin-top: 180px;
+    margin-top: 0px;
   }
   .program-second-div {
-    padding: 40px;
+    padding: 10px;
     gap: 20px;
   }
 
@@ -64,33 +83,57 @@
     height: auto;
     padding: 15px;
   }
-
+  .program-title {
+    font-size: 30px;
+  }
+  .program-descp {
+    padding: 2px;
+    font-size: 16px;
+  }
+  .scope-title {
+    font-size: 20px;
+  }
   .scope-descp {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .scope-video{
+    width: 100%;
+    object-fit: cover;
   }
 }
 
 @media screen and (max-width: 480px) {
   .program-main-container{
-    margin-top: 200px;
+    margin-top: 0px;
   }
   .program-first-div{
     padding: 20px;
   }
   .program-second-div {
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+      width: 95%;
   }
-
+  .program-title {
+    font-size: 30px;
+  }
+  .program-descp {
+    font-size: 18px;
+  }
   .first-scope {
     width: 100%;
     padding: 10px;
   }
 
   .scope-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .scope-descp {
-    font-size: 16px;
+    font-size: 14px;
   }
 }

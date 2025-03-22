@@ -22,10 +22,10 @@ const VideoComponent = () => {
   return (
     <div className="video-container">
       <div className="video-div">
-      <video className="about-video" autoPlay muted loop>
-        <source src={videoSource} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <video className="about-video" autoPlay muted loop>
+          <source src={videoSource} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div className="home-sections">
         <motion.div

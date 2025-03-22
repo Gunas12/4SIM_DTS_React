@@ -5,7 +5,16 @@ import Industry from "../assets/images/industry.jpg";
 import Leader from "../assets/images/leadership.jpg";
 import "./eligibility.css";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 function Eligibility() {
+  const fadeInVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
   const [activeTab, setActiveTab] = useState("eligibility");
   const { t } = useTranslation();
   return (
@@ -22,21 +31,18 @@ function Eligibility() {
         </div>
       </div>
       <div className="elig-sections">
-        <div className="tab-buttons">
-          <button
-            className={activeTab === "eligibility" ? "active" : ""}
-            onClick={() => setActiveTab("eligibility")}
-          >
-            {t("Eligibility Criteria")}
-          </button>
-          <button
-            className={activeTab === "prioritization" ? "active" : ""}
-            onClick={() => setActiveTab("prioritization")}
-          >
-            {t("Prioritization Methodology")}
-          </button>
-        </div>
-        {activeTab === "eligibility" && (
+        <h2
+          style={{ fontSize: "38px", marginTop: "28px", marginBottom: "0px" }}
+        >
+          {t("Eligibility və Prioritization")}
+        </h2>
+        <motion.div
+          className="section"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInVariants}
+        >
           <section className="eligibility-criteria">
             <h3>{t("Eligibility Criteria")}</h3>
             <p className="description">
@@ -89,9 +95,14 @@ function Eligibility() {
               </div>
             </div>
           </section>
-        )}
-
-        {activeTab === "prioritization" && (
+        </motion.div>
+        <motion.div
+          className="section"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInVariants}
+        >
           <section className="prioritization-methodology">
             <h3>{t("Prioritization Methodology")}</h3>
             <p>
@@ -142,7 +153,7 @@ function Eligibility() {
               </div>
             </div>
           </section>
-        )}
+        </motion.div>
       </div>
     </div>
   );

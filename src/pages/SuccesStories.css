@@ -9,7 +9,7 @@
 .video-home1 {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -25,8 +25,8 @@
 
 .video-title {
   position: absolute;
-  top: 29%;
-  right: 7%;
+  top: 30%;
+  right: 6%;
   color: white;
   font-size: 3.7rem;
   margin: 0;

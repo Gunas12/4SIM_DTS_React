@@ -8,6 +8,7 @@
   "Prioritization": "Prioritization",
   "Eligibility Criteria": "Eligibility Criteria",
   "Prioritization Methodology": "Prioritization Methodology",
+  "Eligibility və Prioritization": "Eligibility və Prioritization",
   "To benefit from the Digital Transformation Program, companies must meet the following criteria:": "To benefit from the Digital Transformation Program, companies must meet the following criteria:",
   "Registered & Operating in Azerbaijan": "Registered & Operating in Azerbaijan",
   "The company must be legally registered and conducting business within Azerbaijan.": "The company must be legally registered and conducting business within Azerbaijan.",
@@ -157,9 +158,9 @@
   "Leadership & Commitment": "Leadership & Commitment",
   "Does your company have dedicated digital transformation leader or team?(Yes/No)": "Does your company have dedicated digital transformation leader or team?(Yes/No)",
   "Funding & Financial support needs": "Funding & Financial support needs",
-  "Are senior executives committed to implementing digital transformation strategy?(Yes/No)":"Are senior executives committed to implementing digital transformation strategy?(Yes/No)",
+  "Are senior executives committed to implementing digital transformation strategy?(Yes/No)": "Are senior executives committed to implementing digital transformation strategy?(Yes/No)",
   "Would your company require financial assistance for implementation": "Would your company require financial assistance for implementation",
-  "Has your company previously developed a digital transformation strategy or roadmap?(Yes/No)" :"Has your company previously developed a digital transformation strategy or roadmap?(Yes/No)",
+  "Has your company previously developed a digital transformation strategy or roadmap?(Yes/No)": "Has your company previously developed a digital transformation strategy or roadmap?(Yes/No)",
   "Estimated budget required for digital transformation (If known)": "Estimated budget required for digital transformation (If known)",
   "Additional Supporting Document": "Additional Supporting Document",
   "Company Registration Certification:": "Company Registration Certification:",
@@ -203,6 +204,5 @@
   "Industry 4.0": "Industry 4.0",
   "Website (if applicable)": "Website (if applicable)",
   "Contact Email": "Contact Email",
-  "Upload":"Upload"
-
+  "Upload": "Upload"
 }

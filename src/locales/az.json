@@ -6,8 +6,9 @@
 
   "Eligibility": "Uyğunluq",
   "Prioritization": "Prioritetləndirmə",
-  "Eligibility Criteria": "Eligibilitet kriteriyaları",
+  "Eligibility Criteria": "Uyğunluq kriteriyaları",
   "Prioritization Methodology": "Prioritetləndirmə metodologiyası",
+  "Eligibility və Prioritization": "Uyğunluq və Prioritetləndirmə ",
   "To benefit from the Digital Transformation Program, companies must meet the following criteria:": "Dijital Transformasiya Proqramından faydalanmaq üçün şirkətlərin aşağıdakı kriteriyaları yerinə yetirmələri lazımdır:",
   "Registered & Operating in Azerbaijan": "Azərbaycanda qeydiyyatdan keçmiş və fəaliyyət göstərir",
   "The company must be legally registered and conducting business within Azerbaijan.": "Şirkət Azərbaycanda qanuni olaraq qeydiyyatdan keçmiş və iş görür olmalıdır.",
@@ -204,8 +205,5 @@
   "Industry 4.0": "Sənaye 4.0",
   "Website (if applicable)": "Veb sayt (əgər varsa)",
   "Contact Email": "Əlaqə E-poçtu",
-  "Upload":"Yüklə"
-
-
-
+  "Upload": "Yüklə"
 }

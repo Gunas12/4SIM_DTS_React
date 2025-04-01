@@ -56,6 +56,8 @@
 .sectionx {
   background: transparent;
   background: linear-gradient(to bottom, #252e66, #252e66) !important;
+  margin-bottom: 50px;
+  padding: 40px;
   opacity: 0;
   transition: opacity 0.5s ease;
   box-shadow: none !important;

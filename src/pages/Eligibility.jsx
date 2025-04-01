@@ -32,12 +32,17 @@ function Eligibility() {
       </div>
       <div className="elig-sections">
         <h2
-          style={{ fontSize: "38px", marginTop: "28px", marginBottom: "0px" }}
+          style={{
+            fontSize: "38px",
+            marginTop: "28px",
+            marginBottom: "0px",
+            color: "white",
+          }}
         >
           {t("Eligibility və Prioritization")}
         </h2>
         <motion.div
-          className="section"
+          className="sectionx section"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -45,7 +50,7 @@ function Eligibility() {
         >
           <section className="eligibility-criteria">
             <h3>{t("Eligibility Criteria")}</h3>
-            <p className="description">
+            <p className="description" style={{ color: "white" }}>
               {t(
                 "To benefit from the Digital Transformation Program, companies must meet the following criteria:"
               )}
@@ -97,7 +102,7 @@ function Eligibility() {
           </section>
         </motion.div>
         <motion.div
-          className="section"
+          className="sectionx section"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -105,12 +110,12 @@ function Eligibility() {
         >
           <section className="prioritization-methodology">
             <h3>{t("Prioritization Methodology")}</h3>
-            <p>
+            <p style={{ color: "white" }}>
               {t(
                 "The Digital Transformation Support Program aims to digitally transform 650 Azerbaijani manufacturing companies (500 SMEs and 150 large enterprises) by 2030 under the supervision of 4SIM and the Ministry of Economy (MoE)."
               )}
             </p>
-            <p>
+            <p style={{ color: "white" }}>
               {t(
                 "Each year, a defined number of companies will be invited to join the program. Eligible applicants will be notified at least three months in advance before their participation begins, allowing for early discussions and preparation."
               )}

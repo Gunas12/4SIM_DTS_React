@@ -1,6 +1,6 @@
 .footer {
   height: 140px;
-  background-color: #272933;
+  background: linear-gradient(to bottom, #151a3f, #070a1f);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,8 +14,8 @@
 }
 
 .footer hr {
-  background-color: gray;
-  height: 1px;
+  background-color: #36428e;
+  height: 1.5px;
   border: none;
   margin: 0;
   width: 100%;

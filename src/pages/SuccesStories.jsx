@@ -17,7 +17,12 @@ function SuccesStories() {
     },
   };
   return (
-    <div className="succes">
+    <div
+      className="succes"
+      style={{
+        background: "linear-gradient(to bottom, #27306b, #252e66, #151a3f)",
+      }}
+    >
       <div className="video-home1">
         <video autoPlay muted loop>
           <source src={Success} type="video/mp4" />
@@ -31,6 +36,7 @@ function SuccesStories() {
           marginTop: "28px",
           marginBottom: "0px",
           textAlign: "center",
+          color: "white",
         }}
       >
         {t("Success Stories")}
@@ -41,7 +47,7 @@ function SuccesStories() {
             "The Digital Transformation Program has already made a significant impact by supporting three pioneering Azerbaijani manufacturing companies in their digital transformation journey."
           )}
         </p>
-        <p>
+        <p className="bb">
           {t(
             "As pilot participants, Metak, Azerfloat, and STP successfully completed program and are now in the prcess of securing loans to implement their transformation initiatives."
           )}
@@ -49,7 +55,7 @@ function SuccesStories() {
       </section>
 
       <motion.div
-        className="section"
+        className="sectionx"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}

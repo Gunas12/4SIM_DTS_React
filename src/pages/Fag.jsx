@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./fag.css";
-import Success from "../assets/videos/success.mp4";
+import fag from "../assets/videos/fag.mp4";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 function Fag() {
@@ -12,12 +12,12 @@ function Fag() {
 
   return (
     <div className="Fagg">
-      <div className="video-home1">
+      <div className="video-home7">
         <video autoPlay muted loop>
-          <source src={Success} type="video/mp4" />
+          <source src={fag} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="video-title tt" style={{ color: "white" }}>
+        <div className="video-titlex tt">
           <h3>{t("Frequently")}</h3>
           <h3>{t("Asked Questions")}</h3>
         </div>
@@ -25,7 +25,7 @@ function Fag() {
 
       <div className="Fag">
         <div className="faq-container">
-          <h4>
+          <h4 style={{ color: "white" }}>
             <b>{t("Frequently Asked Questions")}</b>
           </h4>
           <div className="faq-item">

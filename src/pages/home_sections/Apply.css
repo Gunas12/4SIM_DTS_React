@@ -2,6 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding-top: 40px;
+  
 }
 
 .form-container {
@@ -36,7 +37,7 @@ label {
   display: block;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #333;
+  color: white !important;
 }
 .custom-file-upload{
   color:#333;

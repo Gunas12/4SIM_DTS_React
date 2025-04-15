@@ -6,6 +6,7 @@ import Stp from "../assets/images/stp.jpg";
 import Azerfloat from "../assets/images/azerfloat.png";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import Succ_Video from "../assets/videos/success_story.mp4";
 function SuccesStories() {
   const { t } = useTranslation();
   const fadeInVariants = {
@@ -16,6 +17,9 @@ function SuccesStories() {
       transition: { duration: 0.8, ease: "easeOut" },
     },
   };
+
+  const videoRef = React.useRef(null);
+
   return (
     <div
       className="succes"
@@ -88,6 +92,15 @@ function SuccesStories() {
           </div>
         </section>
       </motion.div>
+
+      <div className="responsive-video-wrapper">
+        <div className="video-box">
+          <video ref={videoRef} className="responsive-video" controls>
+            <source src={Succ_Video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
   );
 }

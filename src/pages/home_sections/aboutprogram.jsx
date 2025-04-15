@@ -10,18 +10,20 @@ const AboutProgram = () => {
     <div className="about-program-main-container" id="abouttt">
       <div className="about-first-div">
         <h2 className="about-program-title">{t('About Program')}</h2>
-        <p>{t('The Digital Transformation Program is spearheaded by the Center for Analysis and Coordination of the Fourth Industrial Revolution(4SIM), which oversees the program\'s coordination and execution.')}</p>
+        <p>{t('The overall coordination tasks for the “Industry 4.0 Readiness” program (Program) are carried out by the Fourth Industrial Revolution Analysis and Coordination Center (4SIM).')}</p>
         <p style={{ color: "white" }}>
-          {t('The program is implemented under the supervision of the Ministry of Economy of Azerbaijan(MoE), serving as the project sponsor.')}
+          {t('The program is implemented under the supervision of the Ministry of Economy (MOE) of the Republic of Azerbaijan.')}
         </p>
         <p>
-          {t('Aligned with the 2022-2026 Socio-Economic Development Strategy,')}
-          <b className="about-bold-text">{t('the program aims to empower Azerbaijani businesses by supporting their comprehensive digital transformation.')}</b>
-          {t('It provides funding, capability-building support, and expert guidance to accelerate digital adoption across industries.')}
+          {t('The program helps Azerbaijani businesses implement a complex digital transformation process, serving the goals set by the "Socio-Economic Development Strategy of the Republic of Azerbaijan for 2022-2026"')}
+          {/* <b className="about-bold-text">{t('the program aims to empower Azerbaijani businesses by supporting their comprehensive digital transformation.')}</b> */}
+          {/* {t('It provides funding, capability-building support, and expert guidance to accelerate digital adoption across industries.')} */}
         </p>
         <p>
-          {t('Through structured assessments, strategic roadmaps, financial assistance, and ongoing mentorship,')}
-          <b className="about-bold-text">{t('The Digital Transformation Support Program equips businesses with the tools needed to thrive in the digital era.')}</b>
+          {/* {t('Through structured assessments, strategic roadmaps, financial assistance, and ongoing mentorship,')} */}
+          <b className="about-bold-text">
+  {t("The program includes measures such as assessing companies' existing digital capabilities, developing personalized roadmaps, providing financial support, as well as providing methodological support and institutional capacity building on an ongoing basis to ensure the successful implementation of the transformation.")}
+</b>
         </p>
       </div>
       <div className="about-second-div">

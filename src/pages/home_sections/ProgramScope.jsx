@@ -19,10 +19,10 @@ const ProgramScope = () => {
           {t('Program Scope')}
         </h2>
         <p style={{ textAlign: "center" }} className="program-descp">
-          {t('Companies selected for the program, referred to as Target Companies,')}
+          {t('Target Companies receiving digital transformation support within the program will receive support in five main areas.')}
         </p>
         <p style={{ textAlign: "center" }} className="program-descp">
-          {t('will receive tailored support to achieve five key objectives:')}
+          {/* {t('will receive tailored support to achieve five key objectives:')} */}
         </p>
       </div>
       <div className="program-second-div">
@@ -33,9 +33,9 @@ const ProgramScope = () => {
                  <source src={DigitalMaturity} type="video/mp4" />
                  Your browser does not support the video tag.
                </video>
-                      <h3 className="scope-title">{t('Digital Maturity Assessment')}</h3>
+                      <h3 className="scope-title">{t('Assessment of digital readiness level')}</h3>
           <p className="scope-descp">
-            {t('Evaluating Target Companies\' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement')}
+            {t('Assessment of the existing digital potential, infrastructure, and readiness level of target companies, as well as identifying relevant gaps and opportunities for improvement.')}
           </p>
         </div>
         <div className="first-scope">
@@ -45,9 +45,9 @@ const ProgramScope = () => {
                  <source src={DigitalTransformation} type="video/mp4" />
                  Your browser does not support the video tag.
                </video>
-          <h3 className="scope-title">{t('Digital Transformation Roadmap')}</h3>
+          <h3 className="scope-title">{t('Preparation of a digital transformation roadmap')}</h3>
           <p className="scope-descp">
-            {t('Developing a strategic plan that outlines key initiatives, estimates budgets, implementation steps, and guidance on selecting third-party solution providers')}
+            {t('Preparation of a strategic plan that includes initiatives, technology usage, estimated financial requirements, and an implementation plan, as well as support in identifying vendors and establishing cooperation.')}
           </p>
         </div>
         <div className="first-scope">
@@ -57,9 +57,9 @@ const ProgramScope = () => {
                  <source src={DigitalSkills} type="video/mp4" />
                  Your browser does not support the video tag.
                </video>
-          <h3 className="scope-title">{t('Digital Capability Building')}</h3>
+          <h3 className="scope-title">{t('Strengthening digital knowledge and skills')}</h3>
           <p className="scope-descp">
-            {t('Evaluating Target Companies\' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement')}
+            {t('Enhancing employees’ knowledge and skills through trainings and resources to ensure successful adoption of digital technologies.')}
           </p>
         </div>
         <div className="first-scope">
@@ -69,9 +69,9 @@ const ProgramScope = () => {
                  <source src={ImplementationSupport} type="video/mp4" />
                  Your browser does not support the video tag.
                </video>
-          <h3 className="scope-title">{t('Implementation Support')}</h3>
+          <h3 className="scope-title">{t('Provision of implementation support')}</h3>
           <p className="scope-descp">
-            {t('Evaluating Target Companies\' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement')}
+            {t('Provision of methodological and technical support to ensure effective implementation of digitalization initiatives.')}
           </p>
         </div>
         <div className="first-scope">
@@ -81,9 +81,9 @@ const ProgramScope = () => {
                  <source src={FinancialSupport} type="video/mp4" />
                  Your browser does not support the video tag.
                </video>
-          <h3 className="scope-title">{t('Financial Assistance')}</h3>
+          <h3 className="scope-title">{t('Provision of evaluation and financial support')}</h3>
           <p className="scope-descp">
-            {t('Evaluating Target Companies\' existing digital capabilities, infrastructure, and readiness to identify gaps and areas for improvement')}
+            {t('Providing support to target companies in conducting digital transformation assessments, adopting technologies, and determining and attracting the necessary funding for implementation.')}
           </p>
         </div>
       </div>

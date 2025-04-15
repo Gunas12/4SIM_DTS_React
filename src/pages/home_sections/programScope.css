@@ -34,7 +34,7 @@ html, body {
   flex-direction: column;
   width: 30%;
   padding: 10px;
-  height: 400px;
+  height: 500px;
   text-align: center;
   background: linear-gradient(135deg, rgba(165, 239, 255, 1), rgba(110, 191, 244, 0.22), rgba(70, 144, 212, 0));
 }

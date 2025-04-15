@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="divider"></div>
         <div className="digital-div">
           <p className="digital">{t("Industry 4.0")}</p>
-          <p className="digital">{t("Transformation")}</p>
+          <p className="digital">{t("Readiness")}</p>
           <p className="digital">{t("Program")}</p>
         </div>
 

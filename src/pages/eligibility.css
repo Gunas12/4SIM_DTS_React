@@ -195,7 +195,7 @@
 }
 .prior_card {
   width: 360px;
-  height: 600px;
+  height: 630px;
   background-color: #eef2ff96;
   border-radius: 20px;
 }
@@ -262,7 +262,7 @@
   margin: 0 auto;
   line-height: 1.6rem;
   margin-top: 5px;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /*----------------*/

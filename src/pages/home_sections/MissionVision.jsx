@@ -13,7 +13,7 @@ function MissionVision() {
 
         <p>
           {t(
-            "The program aims to help businesses to achive increased operational efficiency, foster innovation and ensure long-term growth with digitalization initiatives, thereby contributing to the overall economic advancement of Azerbaijan."
+            "The purpose of the program is to contribute to the efficiency and long-term growth of businesses through digitalization and innovation, thereby making a meaningful contribution to the overall development of Azerbaijan's economy."
           )}
         </p>
       </div>

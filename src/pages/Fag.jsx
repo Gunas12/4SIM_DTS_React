@@ -30,105 +30,75 @@ function Fag() {
           </h4>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(0)}>
-              {t(
-                "When will I find out if my company is eligible for the program?"
-              )}
+              {t("When will I know if my company is eligible for the program?")}
               <span className={`faq-icon ${activeIndex === 0 ? "active" : ""}`}>
                 &#9660;
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 0 ? "active" : ""}`}>
-              {t("You will receive a notification regarding your eligibility")}
-              <b>{t(" within one month")}</b>{" "}
               {t(
-                "after submitting your application. The eligibility review includes an assessment based on the program's criteria, such as company size, industry, and digital readiniess."
+                "You will receive a notification regarding your eligibility within one month after submitting your application. The eligibility assessment will be based on criteria such as your company’s size, sector of activity, and level of digital readiness."
               )}
             </div>
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(1)}>
               {t(
-                "When will I know if my company is prioritized for participation?"
+                "When will I be informed if my company is selected as a priority participant?"
               )}
               <span className={`faq-icon ${activeIndex === 1 ? "active" : ""}`}>
                 &#9660;
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 1 ? "active" : ""}`}>
-              {t("If your company is selected as a")}
-              <b>
-                {t(
-                  " prioritized participant, 4SIM authorities will reach out at least three month in advance."
-                )}
-              </b>
               {t(
-                " This allows for detailed discussions on your company's digital transformation roadmap and preparation for the program."
+                "If your company is selected as a priority participant, representatives from 4SIM will contact you at least three months in advance. During this period, detailed discussions will be held on the preparation of the digital transformation roadmap and related preparatory processes."
               )}
             </div>
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(2)}>
               {t(
-                "How does 4SIM assist companies in securing funding from SIF?"
+                "How does 4SIM support companies in obtaining financing from SIF?"
               )}
               <span className={`faq-icon ${activeIndex === 2 ? "active" : ""}`}>
                 &#9660;
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 2 ? "active" : ""}`}>
-              <b>{t("4SIM offers comprehensive support")}</b>{" "}
-              {t("throughout the funding application process:")}
-              <ul>
-                <li>
-                  <b>
-                    {t(
-                      "Document Preparation: We help you compile the necessary documents for submitting to SIF."
-                    )}
-                  </b>
-                </li>
-                <li>
-                  <b>{t("Direct Contact with SIF Authorities:")}</b>{" "}
-                  {t(
-                    "We'll facilitate communication between your company and SIF, ensuring smooth processing of your funding request."
-                  )}
-                </li>
-                <li>
-                  <b>{t("Advisory Services:")}</b>
-                  {t(
-                    " Our experts guide you in identifying the most appropriate funding options and ensuring that your request aligns with SIF's criteria."
-                  )}
-                </li>
-              </ul>
+              {t(
+                "Throughout this process, 4SIM will provide comprehensive support to companies. In the initial phase of the application, they will assist you with the collection and organization of documents required by SIF, offering methodological and technical guidance. Additionally, 4SIM will facilitate coordination and communication between your company and SIF officials to ensure a smooth application process. Advisory services will also be provided by 4SIM experts to help identify appropriate financing opportunities and ensure that your application aligns with SIF’s requirements and evaluation criteria."
+              )}
             </div>
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(3)}>
               {t(
-                "What type of funding support does my company recieve from theprogram?"
+                "What type of financial support will my company receive from the program?"
               )}
               <span className={`faq-icon ${activeIndex === 3 ? "active" : ""}`}>
                 &#9660;
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 3 ? "active" : ""}`}>
-              <b> {t("The Digital Tranformation Program")}</b> {t("provides")}
-              <b>{t("financial support in two key areas:")}</b>
+              <p>
+                {" "}
+                {t(
+                  "The “Industry 4.0 Readiness” Program offers financial support in two areas:"
+                )}
+              </p>
+
               <ul>
                 <li>
-                  <b>{t("Assessment & Roadmap Development:")} </b>{" "}
-                  {t("Companies will receive grants to fund")}{" "}
-                  <b>
-                    {t(
-                      "digital maturity assessments and the development of a customized digital transformation roadmap."
-                    )}
-                  </b>
+                  <b>{t("Assessment & Roadmap Development:")} </b>
+                  {t(
+                    "Companies are provided with grant funding to evaluate their digital readiness and to develop a customized digital transformation roadmap."
+                  )}
                 </li>
                 <li>
-                  <b>{t("Implementation Support:")} </b>{" "}
-                  {t("Companies are eligible for")}
-                  <b>{t("low-interest loans from SIF")}</b>{" "}
+                  <b>{t("Implementation Phase Support:")} </b>
                   {t(
-                    "to implement their transformation plans. These loans help cover the costs of technology adoption, infrastructure upgrades, and related initiatives."
+                    "Participating companies are eligible to apply for low-interest loans from SIF to support the execution of their transformation plans. This funding covers costs related to technology adoption, infrastructure modernization, and other related initiatives."
                   )}
                 </li>
               </ul>
@@ -136,76 +106,60 @@ function Fag() {
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(4)}>
-              {t(
-                "Are the grants for consulting services covered by the program?"
-              )}
+              {t("Does the program cover grants for consulting services?")}
               <span className={`faq-icon ${activeIndex === 4 ? "active" : ""}`}>
                 &#9660;
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 4 ? "active" : ""}`}>
-              {t("Yes, the")} <b>{t("local digital consultancy services")}</b>
               {t(
-                " for conducting digital maturity assessments, developing transformation roadmaps, and providing implementation support will be fully funded through a grant. Your company will not incur costs for these services."
+                "Yes, local digital consulting services are fully funded through grants to support digital readiness assessments, roadmap development, and implementation assistance. Your company will not bear any financial obligations to access these services."
               )}
             </div>
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(5)}>
-              {t("How long does the funding process take?")}
+              {t("How long does it take to receive the financial support?")}
               <span className={`faq-icon ${activeIndex === 5 ? "active" : ""}`}>
                 &#9660;
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 5 ? "active" : ""}`}>
-              {t("The timeline for securing")}{" "}
-              <b>{t("financial assistance")} </b>{" "}
-              <b>
-                {t(
-                  "depends on the complexity of your transformation plan and the SIF approval process."
-                )}
-              </b>
               {t(
-                "On average, you can expect the process to take between 1 to 3 months from initial application to final approval and funding disbursement."
+                "The timeline for receiving financial support may vary depending on the complexity of the transformation plan and the duration of the approval process carried out by SIF. On average, the process from initial application to final approval and disbursement takes 1 to 3 months."
               )}
             </div>
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(6)}>
-              {t(
-                " Will the portal remain open for applications throughout the year?"
-              )}
+              {t("Will the application portal remain open continuously?")}
               <span className={`faq-icon ${activeIndex === 6 ? "active" : ""}`}>
                 &#9660;
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 6 ? "active" : ""}`}>
-              {t("Yes, the")}{" "}
-              <b>{t("application portal will remain open permanently,")}</b>
               {t(
-                "as this is a continuing program designed to support companies year-round. You can apply the program at any time and join in one of the prioritized cycles."
+                "Yes, the application portal will remain open permanently. This is a continuous program designed to provide year-round support for companies. You can apply at any time and join one of the relevant priority periods."
               )}
             </div>
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(7)}>
-              {t(
-                " What if my company is not selected initially? Can we reapply?"
-              )}
+              {t("If my company is not selected, can we apply again?")}
               <span className={`faq-icon ${activeIndex === 7 ? "active" : ""}`}>
                 &#9660;
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 7 ? "active" : ""}`}>
               {t(
-                "Yes, if your company is ot selected during the current cycle, youcan reapply in future cycles. In fact, we encourage companies to apply again after enhancing their digital oraddressing any gaps identified during the selection process."
+                "Yes, if your company is not selected during the current cycle, you may reapply in future rounds. In fact, we encourage companies to address any gaps identified during the selection process and to improve their digital readiness before reapplying."
               )}
             </div>
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(8)}>
               {t(
-                "How do we know if our company is ready for digital transformation?"
+                "How can we determine if our company is ready for digital transformation?"
               )}
               <span className={`faq-icon ${activeIndex === 8 ? "active" : ""}`}>
                 &#9660;
@@ -213,23 +167,22 @@ function Fag() {
             </button>
             <div className={`faq-answer ${activeIndex === 8 ? "active" : ""}`}>
               {t(
-                " As part of the program, we'll conduct a Digital maturity Assessment  to evaluate your current digital capabilities. This process will hep you identify areas for improvement and create a personalized roadmap for transformation."
+                "As part of the program, we will conduct a Digital Readiness Assessment to evaluate your current digital capabilities. This assessment will help identify strengths and areas for improvement and will allow us to develop a tailored transformation roadmap based on your specific needs."
               )}
             </div>
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(9)}>
               {t(
-                "What kind of training and capability-building support does the program offer?"
+                "What types of training and upskilling support are offered under the program?"
               )}
               <span className={`faq-icon ${activeIndex === 9 ? "active" : ""}`}>
                 &#9660;
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 9 ? "active" : ""}`}>
-              <b> {t("The Digital Transformation Program")}</b>{" "}
               {t(
-                "includes training workshops, seminars, and online resourcesto help your team build essential digital skills. This includes everthing from basic digital literacy to specialized training on specific technologies like cloud computing, AI, automation, and cybersecurity."
+                "The “Industry 4.0 Readiness” Program includes training workshops, hands-on sessions, and online resources aimed at developing and strengthening your team’s core digital skills. The training covers both general digital literacy and specialized topics such as cloud technologies, artificial intelligence, automation, and cybersecurity. This approach ensures your team can actively participate in the digital transformation process and continue developing over time."
               )}
             </div>
           </div>
@@ -238,7 +191,9 @@ function Fag() {
               className="faq-question"
               onClick={() => toggleAccordion(10)}
             >
-              {t("Can we use the program's funding for other purposes?")}
+              {t(
+                "What activities are covered by the financial support under the program, and are there any usage restrictions?"
+              )}
               <span
                 className={`faq-icon ${activeIndex === 10 ? "active" : ""}`}
               >
@@ -246,25 +201,25 @@ function Fag() {
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 10 ? "active" : ""}`}>
-              {t("The program's financial support is desined specifically for")}
-              <b>{t("digital transformation-related activities")}</b>
-              {t(", such as:")}
+              {t(
+                "The financial support offered under the program is specifically intended for activities related to digital transformation. These activities include:"
+              )}
+
               <ul>
-                <li>{t("Conductiong assessments")}</li>
-                <li>{t("Developing roadmaps")}</li>
-                <li>{t("Technology adoption")}</li>
+                <li>{t("Conducting digital assessments")}</li>
+                <li>{t("Developing transformation roadmaps")}</li>
+                <li>{t("Implementing and adopting relevant technologies")}</li>
                 <li>
                   {t(
-                    "Implementation costs (e.g., hardware, software, infrastructure upgrades)"
+                    "Covering execution-related costs (e.g., equipment, software, and infrastructure upgrades)"
                   )}
-                </li>
-                <li>
-                  {t(
-                    "Any other use of funds outside of the approved scope would require prior approval from"
-                  )}
-                  <b> 4SIM.</b>
                 </li>
               </ul>
+              <p>
+                {t(
+                  "Any use of funds for purposes outside this scope requires prior approval from 4SIM."
+                )}
+              </p>
             </div>
           </div>
           <div className="faq-item">
@@ -273,7 +228,7 @@ function Fag() {
               onClick={() => toggleAccordion(11)}
             >
               {t(
-                "Will participating in the program help improve our competitiveness internationally?"
+                "Will participation in the program help improve our international competitiveness?"
               )}
               <span
                 className={`faq-icon ${activeIndex === 11 ? "active" : ""}`}
@@ -283,7 +238,7 @@ function Fag() {
             </button>
             <div className={`faq-answer ${activeIndex === 11 ? "active" : ""}`}>
               {t(
-                "Absolutely! By embracing digital transformation, your company can gain a competitive edge in global markets. The program focuses on improving operational efficiency, innovation, and scalability, which will position your business for success both locally and internationally."
+                "Absolutely! Embracing digital transformation enables your company to gain a competitive edge in global markets. The program’s core goals include improving operational efficiency, promoting innovation, and enhancing scalability. This approach positions your company for more sustainable and successful operations both locally and internationally."
               )}
             </div>
           </div>

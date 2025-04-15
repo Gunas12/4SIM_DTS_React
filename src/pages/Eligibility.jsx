@@ -52,49 +52,53 @@ function Eligibility() {
             <h3>{t("Eligibility Criteria")}</h3>
             <p className="description" style={{ color: "white" }}>
               {t(
-                "To benefit from the Digital Transformation Program, companies must meet the following criteria:"
+                "To benefit from the “Industry 4.0 Readiness” Program, companies must meet the following criteria:"
               )}
             </p>
             <div className="criteria-list">
               <div className="criteria-item">
-                <h4>{t("Registered & Operating in Azerbaijan")}</h4>
+                <h4>{t("Legal Registration Address")}</h4>
                 <p>
                   {t(
-                    "The company must be legally registered and conducting business within Azerbaijan."
+                    "The company must be legally registered and actively operating in accordance with the laws of the Republic of Azerbaijan."
                   )}
                 </p>
               </div>
               <div className="criteria-item">
                 <h4>{t("Local Ownership")}</h4>
-                <p>{t("At least 51% of the company must be locally owned.")}</p>
+                <p>
+                  {t(
+                    "At least 51% of the company’s charter capital must be owned by local individuals or entities."
+                  )}
+                </p>
               </div>
               <div className="criteria-item">
-                <h4>{t("Industry Focus")}</h4>
+                <h4>{t("Priority Sectors")}</h4>
                 <p>
-                  {t("The company must be operating in the following sectors")}:
+                  {t(
+                    "The company must operate in one of the following priority sectors:"
+                  )}
                 </p>
                 <ul>
                   <li>{t("Manufacturing")}</li>
-                  <li>{t("IT & Software Development")}</li>
-                  <li>{t("Energy & Infrastructure")}</li>
-                  <li>{t("Other relevant industries")}</li>
+                  <li>{t("Information Technology and Communications")}</li>
+                  <li>{t("Healthcare")}</li>
+                  <li>{t("Other relevant fields")}</li>
                 </ul>
               </div>
               <div className="criteria-item">
                 <h4>{t("Company Size")}</h4>
                 <p>
-                  {t(
-                    "The company must meet the following size classification:"
-                  )}
+                  {t("The company must meet the following size requirements:")}
                 </p>
                 <ul>
                   <li>
-                    <strong>{t("Employees")}:</strong>
-                    {t("More than 10")}
+                    <strong>{t("Number of employees")} : </strong>
+                    {t("Minimum 10")}
                   </li>
                   <li>
-                    <strong>{t("Annual turnover:")}</strong>{" "}
-                    {t("More than 5 million manats")}
+                    <strong>{t("Annual turnover")} : </strong>
+                    {t("Minimum 5 million AZN")}
                   </li>
                 </ul>
               </div>
@@ -112,21 +116,17 @@ function Eligibility() {
             <h3>{t("Prioritization Methodology")}</h3>
             <p style={{ color: "white" }}>
               {t(
-                "The Digital Transformation Support Program aims to digitally transform 650 Azerbaijani manufacturing companies (500 SMEs and 150 large enterprises) by 2030 under the supervision of 4SIM and the Ministry of Economy (MoE)."
+                "Under the program, a limited number of companies will be selected each year and invited to participate. Eligible applicants will be officially notified at least three months prior to the start of their participation. This timeframe provides sufficient opportunity for initial discussions and necessary preparations."
               )}
             </p>
-            <p style={{ color: "white" }}>
-              {t(
-                "Each year, a defined number of companies will be invited to join the program. Eligible applicants will be notified at least three months in advance before their participation begins, allowing for early discussions and preparation."
-              )}
-            </p>
+
             <div className="prior_cards_section">
               <div className="prior_card">
                 <img src={Industry} alt="Industry Focus" />
-                <h2>{t("Industry Focus")}</h2>
+                <h2>{t("Industrial Focus")}</h2>
                 <p>
                   {t(
-                    "Priority given to manufacturing companies (food & beverages, refined petroleum products, chemicals, other non-metalic mineral products, basic metals, repair and installation of machinery and equipment, rubber & plastic products, fabricated metal products, textiles, machinery & equipment, electrical equipment) that contribute to economic diversification and industrial growth."
+                    "Preference will be given to manufacturing companies that contribute to economic diversification and industrial development. This includes, in particular, companies operating in the following areas: food and beverage production, refined petroleum products, chemicals, other mineral-based products, basic metals, machinery and equipment maintenance and installation, rubber and plastic products, fabricated metal products, textiles, machinery and equipment, as well as electrical equipment."
                   )}
                 </p>
               </div>
@@ -135,7 +135,7 @@ function Eligibility() {
                 <h2>{t("Export Potential")}</h2>
                 <p>
                   {t(
-                    "Companies with a higher export ratio and international market presence will be prioritized as digital transformation can enhace global competitiveness."
+                    "Companies with high export potential those with a strong export ratio and presence in international markets will be prioritized. These companies align more closely with the goals of the program by contributing to enhanced global competitiveness."
                   )}
                 </p>
               </div>
@@ -143,17 +143,9 @@ function Eligibility() {
                 <img src={Leader} alt="Leadership Commitment" />
                 <h2>{t("Leadership Commitment")}</h2>
                 <p>
-                  <b>{t("Strong preference for businesses where:")}</b>
-                  <li>
-                    {t(
-                      "Senior executives actively support and drive digital transformation."
-                    )}
-                  </li>
-                  <li>
-                    {t(
-                      "A digital strategy is already in place or under development."
-                    )}
-                  </li>
+                  {t(
+                    "Strong applications typically demonstrate active support and leadership from top management and other key governance structures in the digital transformation process. Such companies often already have a digital strategy in place or are taking concrete steps toward its development."
+                  )}
                 </p>
               </div>
             </div>

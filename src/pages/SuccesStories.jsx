@@ -44,12 +44,7 @@ function SuccesStories() {
       <section className="description-section">
         <p className="bb">
           {t(
-            "The Digital Transformation Program has already made a significant impact by supporting three pioneering Azerbaijani manufacturing companies in their digital transformation journey."
-          )}
-        </p>
-        <p className="bb">
-          {t(
-            "As pilot participants, Metak, Azerfloat, and STP successfully completed program and are now in the prcess of securing loans to implement their transformation initiatives."
+            "The “Industry 4.0 Readiness” Program has already made a significant impact by supporting the digital transformation journeys of three leading manufacturing companies in Azerbaijan. The pilot participants—Metak, Azerfloat, and STP—have successfully completed the program and are currently in the process of securing financial support to implement their transformation initiatives."
           )}
         </p>
       </section>
@@ -68,7 +63,7 @@ function SuccesStories() {
               <h2>Metak</h2>
               <p>
                 {t(
-                  " A leading manufacturer in Azerbaijan, Metak leveraged the program to assess its digital maturity and develop a comprehensive digital transformation roadmap. With targeted support, the company is now set to integrate advanced automation and smart manufacturing solutions."
+                  "Metak, one of Azerbaijan’s leading pipe manufacturing companies, participated in the “Industry 4.0 Readiness” Program. As part of the program, the company's digital maturity level was assessed, and a comprehensive digital transformation roadmap was developed. Metak is now preparing to implement advanced automation and smart manufacturing solutions."
                 )}
               </p>
             </div>
@@ -77,16 +72,16 @@ function SuccesStories() {
               <h2>Azerfloat</h2>
               <p>
                 {t(
-                  "Specializing in glass production, Azerfloat used the program to enhance operational efficiency, streamline production, and adopt digital tools that optimize resource management. Their transformation roadmap focuses on data-driven decision-making and improved production workflows."
+                  "Specializing in glass production, Azerfloat was provided with a digital transformation roadmap aimed at improving operational efficiency, optimizing manufacturing processes, and enhancing resource management. The company is currently taking steps toward data-driven decision-making and improved production processes as part of the roadmap implementation."
                 )}
               </p>
             </div>
             <div className="story">
               <img src={Stp} alt="STP_logo" />
-              <h2>{t("STP (Sumgait Technologies Park)")}</h2>
+              <h2>{t("STP")}</h2>
               <p>
                 {t(
-                  "As one of the largest industrial hubs in Azerbaijan, STP embraced digital transformation by implementing AI-powered monitoring systems and smart logistics solutions. Their participation in the program has positioned them to enhance productivity and sustainability through technology-driven innovations."
+                  "STP, one of Azerbaijan’s largest industrial hubs, has embraced digital transformation by implementing AI-powered monitoring systems and smart logistics solutions. The company’s participation in the program has expanded its productivity and sustainability capabilities through technology-driven innovation."
                 )}
               </p>
             </div>

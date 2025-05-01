@@ -10,242 +10,95 @@ html, body {
 }
 
 .program-main-container {
- width: 100%;
+  width: 100%;
+  width: 1500px;
   padding-top: 50px;
   background-color: rgba(0, 0, 0, 0.1);
-
 }
+
 .program-title {
   font-size: 40px;
-  color:rgba(255, 255, 255, 1) !important;
+  text-align: center;
+  color: white;
 }
+
 .program-descp {
   font-size: 24px;
-  color:white;
+  text-align: center;
+  color: white;
 }
+
 .program-second-div {
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
-  gap: 30px;
-  padding: 80px;
+  flex-wrap: wrap;
   justify-content: center;
-  
-}
-.clickable-icon {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.clickable-icon:hover {
-  transform: scale(1.05);
-}
-
-.text-expand {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-}
-
-.text-expand.show {
-  max-height: 200px;
-  opacity: 1;
-  margin-top: 10px;
+  padding: 80px 20px;
+  gap: 30px;
+  /* width:100%; */
+  max-width: 1400px;
+  margin: 0 auto;   
 }
 
 .digital-scope {
-  display: flex;
-  align-items: center;
+  width: 410px;
   background-color: #f9f9fb;
   border-radius: 16px;
-  padding: 16px 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  width: 380px;
-  font-family: 'Poppins', sans-serif;
-  height: 100px;
-}
-.digital-first-scope{
-  display: flex;
-  align-items: center;
-  background-color: #f9f9fb;
-  border-radius: 16px;
   padding: 16px 20px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  width: 600px;
-  font-family: 'Poppins', sans-serif;
-  height: 100px;
-}
-.icon-area {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  max-height: 100px;
 }
 
-.globe-lock-icon {
-  background-size: 20px 20px;
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  display: inline-block;
+.digital-scope.expanded {
+  max-height: 300px;
+}
+
+.scope-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scope-icon {
+  width: 36px;
+  height: 36px;
 }
 
 .scope-title {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #1d1d1f;
   margin: 0;
 }
 
-.first-scope {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding: 10px;
-  height: 500px;
-  text-align: center;
-  background: linear-gradient(135deg, rgba(165, 239, 255, 1), rgba(110, 191, 244, 0.22), rgba(70, 144, 212, 0));
+.scope-collapse {
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
 }
 
-.first-scope::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  background: linear-gradient(135deg, rgba(165, 239, 255, 1), rgba(110, 191, 244, 0.22), rgba(70, 144, 212, 0));
-  z-index: -1;
-  border-radius: 14px;
-}
-/* .first-scope {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding: 10px;
-  height: 400px;
-  text-align: center;
-  background: linear-gradient(to left, #98f9ff, #ffffff58, #eabfff, #8726b7);
-}
-
-.first-scope::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: inherit;
-  background: linear-gradient(to left, rgba(37, 46, 102, 0.8), rgba(21, 26, 63, 0.7));
-  z-index: -1;
-} */
-
-.scope-video{
-  height: 60%;
-  object-fit: cover;
-}
-
-.scope-title {
-  color: rgb(97, 97, 210);
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
+.scope-collapse.open {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 15px;
 }
 
 .scope-descp {
-  margin-top: 20px;
-  font-size: 16px;
-  text-align: left;
-  color:  white;;
-}
-
-@media screen and (max-width: 1366px) {
-  .first-scope {
-    width: 45%;
-  }
-  .program-second-div {
-    display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 10px;
-  justify-content: center;
-    width: 95%;
-  }
-  .scope-title {
-    font-size: 18px;
-  }
+  font-size: 14px;
+  color: #333;
 }
 
 @media screen and (max-width: 769px) {
-  .program-main-container{
-    margin-top: 0px;
-  }
-  .program-second-div {
-    padding: 10px;
-    gap: 20px;
-  }
-
-  .first-scope {
-    width: 80%;
-    height: auto;
-    padding: 15px;
-  }
-  .program-title {
-    font-size: 30px;
-  }
-  .program-descp {
-    padding: 2px;
-    font-size: 16px;
-  }
-  .scope-title {
-    font-size: 20px;
-  }
-  .scope-descp {
-    font-size: 16px;
-  }
-  .scope-video{
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .program-main-container{
-    margin-top: 0px;
-  }
-  .program-first-div{
-    padding: 20px;
-  }
-  .program-second-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 10px;
-    justify-content: center;
-      width: 95%;
-  }
   .program-title {
     font-size: 30px;
   }
   .program-descp {
     font-size: 18px;
   }
-  .first-scope {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .scope-title {
-    font-size: 18px;
-  }
-
-  .scope-descp {
-    font-size: 14px;
+  .digital-scope {
+    width: 90%;
   }
 }

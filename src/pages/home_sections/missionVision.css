@@ -1,6 +1,6 @@
 .mission-vision {
   width: 100%;
-  background-color: #f4f4f5;
+  background-color: transparent;
   display: flex;
   justify-self: center;
   justify-content: center;
@@ -235,7 +235,7 @@
 
 .mission-vision {
   width: 100%;
-  background-color: #f4f4f5;
+
   display: flex;
   justify-content: center;
   align-items: center;

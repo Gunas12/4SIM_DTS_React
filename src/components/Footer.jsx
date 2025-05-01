@@ -5,7 +5,7 @@ import im from "../assets/images/fda01ab805d61c623fe3be09751f78da5c49942a.png";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
-import LogoAz from "../assets/images/4simlogoaz.svg";
+import LogoAz from "../assets/images/4SIM.svg";
 import LogoEn from "../assets/images/4simlogoen.png";
 import { useTranslation } from "react-i18next";
 

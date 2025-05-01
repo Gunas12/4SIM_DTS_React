@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import gifImage1 from "../../assets/images/eae48a63124aef9c73cac6fbe722dd28425bcc6b.gif";
 import gifImage2 from "../../assets/images/f11ce2855a2b392e1fe4ee18ef747ae52a83ed98.gif";
 import img1 from "../../assets/images/8f8d3461d7f75301d0b7bc1f1efcf852c5b9f28b.png";
-import img2 from "../../assets/images/fda01ab805d61c623fe3be09751f78da5c49942a.png";
+import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/Group 11.svg";
 import img4 from "../../assets/images/azerfloat.svg";
 import img5 from "../../assets/images/Frame 56.svg";
@@ -19,19 +19,21 @@ function MissionVision() {
   const logos = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    let animationFrameId;
+
+    const scrollSlider = () => {
       if (sliderRef.current) {
-        sliderRef.current.scrollLeft += 1;
-        if (
-          sliderRef.current.scrollLeft + sliderRef.current.offsetWidth >=
-          sliderRef.current.scrollWidth
-        ) {
+        sliderRef.current.scrollLeft += 0.5;
+        if (sliderRef.current.scrollLeft >= sliderRef.current.scrollWidth / 2) {
           sliderRef.current.scrollLeft = 0;
         }
       }
-    }, 20);
+      animationFrameId = requestAnimationFrame(scrollSlider);
+    };
 
-    return () => clearInterval(interval);
+    scrollSlider();
+
+    return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
   return (
@@ -69,7 +71,7 @@ function MissionVision() {
       </section>
       <div className="logo-slider">
         <div className="logo-slider-container" ref={sliderRef}>
-          {logos.map((img, idx) => (
+          {[...logos, ...logos].map((img, idx) => (
             <img key={idx} src={img} alt={`logo-${idx}`} className="logo-img" />
           ))}
         </div>

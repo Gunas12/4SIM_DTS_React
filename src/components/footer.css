@@ -70,7 +70,7 @@
 
 .footer-icons {
   display: flex;
-  gap: 15px;
+  gap: 16px;
   justify-content: center;
   font-size: 25px;
   align-items: center;
@@ -83,8 +83,8 @@
 }
 
 .footer-icons svg:hover {
-  transform: scale(1.2);
-  color: #1a4381;
+  transform: scale(1.1);
+  color: #a5c5f5;
 }
 
 hr {

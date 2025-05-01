@@ -265,7 +265,7 @@
 .logo-slider-container {
   display: flex;
   overflow-x: hidden;
-  width: 70%;
+  width: 100%;
   justify-content: center;
   padding: 20px 0;
 }

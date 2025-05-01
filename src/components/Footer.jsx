@@ -8,7 +8,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import LogoAz from "../assets/images/4SIM.svg";
 import LogoEn from "../assets/images/4simlogoen.png";
 import { useTranslation } from "react-i18next";
-
+import { FaLinkedinIn } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 function Footer() {
   const { i18n } = useTranslation();
   const { t } = useTranslation();
@@ -28,9 +29,19 @@ function Footer() {
           </div>
 
           <div className="footer-icons">
-            <FaFacebook />
-            <IoLogoInstagram />
-            <FaXTwitter />
+            <Link to="https://www.facebook.com/4sim.gov.az">
+              <FaFacebook />
+            </Link>
+
+            <Link to="https://www.instagram.com/c4ir_azerbaijan/">
+              <IoLogoInstagram />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/company/4simgovaz/
+"
+            >
+              <FaLinkedinIn />
+            </Link>
           </div>
         </div>
       </div>

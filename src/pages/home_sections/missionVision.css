@@ -15,7 +15,7 @@
   flex-wrap: wrap;
 }
 
-.card {
+.mcard {
   background-color: white;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
@@ -27,7 +27,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.mcard:hover {
   transform: translateY(-10px);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -40,14 +40,14 @@
   object-fit: cover;
 }
 
-h3 {
+.mh3 {
   color: #323232;
   font-size: 36px;
   margin-bottom: 10px;
   font-weight: 500;
 }
 
-p {
+.mp {
   color: #323232;
   font-size: 18px;
   line-height: 1.6;
@@ -57,12 +57,12 @@ p {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .mcontainer {
     flex-direction: column;
     gap: 20px;
   }
 
-  .card {
+  .mcard {
     width: 100%;
   }
 }

@@ -11,13 +11,13 @@ function MissionVision() {
   return (
     <section className="mission-vision">
       <div className="mcontainer">
-        <div className="card mission">
+        <div className="mcard mission">
           <div className="circle-icon">
             <img src={gifImage1} alt="Mission Icon" />
           </div>
           <div className="content">
-            <h3>{t("Missiyamız")}</h3>
-            <p>
+            <h3 className="mh3">{t("Missiyamız")}</h3>
+            <p className="mp">
               Proqramın məqsədi bizneslərin rəqəmsallaşma və innovasiya yolu ilə
               səmərəliliyinin və uzunmüddətli artımının dəstəklənməsi, bununla
               da Azərbaycanın iqtisadiyyatının ümumi inkişafına töhfə verməkdir.
@@ -25,13 +25,13 @@ function MissionVision() {
           </div>
         </div>
 
-        <div className="card vision">
+        <div className="mcard vision">
           <div className="circle-icon">
             <img src={gifImage2} alt="Vision Icon" />
           </div>
           <div className="content">
-            <h3>{t("Vizyonumuz")}</h3>
-            <p>
+            <h3 className="mh3">{t("Vizyonumuz")}</h3>
+            <p className="mp">
               “Sənaye 4.0 Hazırlıq” Proqramı ilə 2030-cu ilədək 4SIM və
               İqtisadiyyat Nazirliyinin dəstəyi ilə ölkəmizin istehsal yönümlü
               müəssisələrinin rəqəmsal transformasiyasına hədəflənmişdir.

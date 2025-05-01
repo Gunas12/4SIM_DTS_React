@@ -10,6 +10,7 @@ import img3 from "../../assets/images/Group 11.svg";
 import img4 from "../../assets/images/azerfloat.svg";
 import img5 from "../../assets/images/Frame 56.svg";
 function MissionVision() {
+  const { i18n } = useTranslation();
   const { t } = useTranslation();
 
   return (
@@ -20,11 +21,11 @@ function MissionVision() {
             <img src={gifImage1} alt="Mission Icon" />
           </div>
           <div className="content">
-            <h3 className="mh3">{t("Missiyamız")}</h3>
+            <h3 className="mh3">{t("Our Mission")}</h3>
             <p className="mp">
-              Proqramın məqsədi bizneslərin rəqəmsallaşma və innovasiya yolu ilə
-              səmərəliliyinin və uzunmüddətli artımının dəstəklənməsi, bununla
-              da Azərbaycanın iqtisadiyyatının ümumi inkişafına töhfə verməkdir.
+              {t(
+                "The aim of the program is to support the efficiency and long-term growth of businesses through digitalization and innovation, thereby contributing to the overall development of Azerbaijan’s economy."
+              )}
             </p>
           </div>
         </div>
@@ -34,11 +35,11 @@ function MissionVision() {
             <img src={gifImage2} alt="Vision Icon" />
           </div>
           <div className="content">
-            <h3 className="mh3">{t("Vizyonumuz")}</h3>
+            <h3 className="mh3">{t("Our Vision")}</h3>
             <p className="mp">
-              “Sənaye 4.0 Hazırlıq” Proqramı ilə 2030-cu ilədək 4SIM və
-              İqtisadiyyat Nazirliyinin dəstəyi ilə ölkəmizin istehsal yönümlü
-              müəssisələrinin rəqəmsal transformasiyasına hədəflənmişdir.
+              {t(
+                "The “Industry 4.0 Readiness” Program, supported by 4SIM and the Ministry of Economy, aims to drive the digital transformation of manufacturing-oriented enterprises in our country by 2030."
+              )}
             </p>
           </div>
         </div>

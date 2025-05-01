@@ -23,7 +23,7 @@ function Footer() {
             <img src={logo} alt="4SIM_logo" className="footer-logo-img" />
             <div className="footer-divider"></div>
             <div className="footer-text">
-              <p>SƏNAYE 4.0 HAZIRLIQ PROQRAMI</p>
+              <p className="fp">{t("INDUSTRY 4.0 READİNESS PROGRAM")}</p>
             </div>
           </div>
 

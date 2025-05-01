@@ -7,6 +7,7 @@ const AboutProgram = () => {
   const { t } = useTranslation();
 
   return (
+    
     <div className="about-program-main-container" id="abouttt">
       <div className="about-first-div">
         <h2 className="about-program-title">{t('About Program')}</h2>

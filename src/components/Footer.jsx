@@ -1,8 +1,13 @@
 import React from "react";
 import "./footer.css";
-import { useTranslation } from "react-i18next";
+import azin from "../assets/images/azin-loog.png";
+import im from "../assets/images/fda01ab805d61c623fe3be09751f78da5c49942a.png";
+import { FaFacebook } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
 import LogoAz from "../assets/images/4simlogoaz.svg";
 import LogoEn from "../assets/images/4simlogoen.png";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
   const { i18n } = useTranslation();
@@ -10,13 +15,28 @@ function Footer() {
   const logo = i18n.language === "az" ? LogoAz : LogoEn;
   return (
     <div className="footer">
-      <hr />
       <div className="footer-content">
-        <div className="footer-logo">
-          <img src={logo} alt="4SIM_logo" className="footer-logo-img" />
+        <div className="footerh">
+          <div className="footer-logo">
+            <img src={azin} alt="Azin Logo" className="flogo1" />
+
+            <img src={logo} alt="4SIM_logo" className="footer-logo-img" />
+            <div className="footer-divider"></div>
+            <div className="footer-text">
+              <p>SƏNAYE 4.0 HAZIRLIQ PROQRAMI</p>
+            </div>
+          </div>
+
+          <div className="footer-icons">
+            <FaFacebook />
+            <IoLogoInstagram />
+            <FaXTwitter />
+          </div>
         </div>
+      </div>
+      <hr />
+      <div className="footer-copyright">
         <p>&copy; {t("2025. All rights reserved.")}</p>
-        <p></p>
       </div>
     </div>
   );

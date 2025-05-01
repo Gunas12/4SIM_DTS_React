@@ -1,4 +1,4 @@
-body{
+body {
   padding: 0;
   margin: 0;
 }
@@ -10,12 +10,12 @@ body{
   position: relative;
   width: 100%;
 }
-.about-header{
+.about-header {
   color: white;
   text-align: center;
   margin-top: 40px;
 }
-.about-logo-header{
+.about-logo-header {
   margin-top: 200px;
 }
 .video-div img {
@@ -28,12 +28,12 @@ body{
   /* height: auto; */
 }
 .image-cropper {
-  height: 1000px; 
+  height: 1000px;
   overflow: hidden;
 }
 
 .image-cropper img {
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .overlay {
@@ -45,32 +45,32 @@ body{
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 5px;
 }
 .about-logos {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  gap: 40px; 
+  gap: 40px;
   margin-top: 30px;
 }
 
 .about-logos img {
-  height: 60px; 
+  height: 60px;
   object-fit: contain;
 }
 
 .about-buttons {
   display: flex;
   gap: 16px;
-  justify-content: center; 
+  justify-content: center;
   margin-top: 20px;
 }
 
 .about-buttons button {
-  background-color: #004aad; 
+  background-color: #004aad;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -82,16 +82,16 @@ body{
 }
 
 .about-buttons button:hover {
-  background-color: #003080; 
+  background-color: #003080;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .about-video {
   width: 100%;
   height: 100%;
-  position: absolute; 
-  bottom: 0; 
-  object-fit: cover; 
+  position: absolute;
+  bottom: 0;
+  object-fit: cover;
 }
 
 .circle-menu {
@@ -180,8 +180,8 @@ body{
 }
 /*animation*/
 .section {
-  margin-bottom: 40px;
-  padding: 20px;
+  /*margin-bottom: 40px;
+  padding: 20px;*/
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   opacity: 0;
@@ -206,16 +206,16 @@ body{
 @media (max-width: 1367px) {
   .video-div {
     height: 600px;
-    overflow: hidden; 
-    position: relative; 
+    overflow: hidden;
+    position: relative;
   }
   .about-video {
     width: 100%;
-  height: 100%;
-  position: absolute; 
-  bottom: 0; 
-  object-fit: cover; 
-  border-radius:0px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    border-radius: 0px;
   }
   .circle-menu {
     right: 5%;
@@ -262,17 +262,17 @@ body{
 @media (max-width: 768px) {
   .video-div {
     height: 400px;
-    overflow: hidden; 
-    position: relative; 
+    overflow: hidden;
+    position: relative;
   }
   .about-video {
     width: 100%;
-  height: 100%;
-  position: absolute; 
-  bottom: 0; 
-  object-fit: cover; 
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
   }
-   .home-tab-buttons {
+  .home-tab-buttons {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
@@ -291,41 +291,38 @@ body{
     font-size: 1rem;
     padding: 10px 20px;
   }
- 
 }
-
 
 @media (max-width: 500px) {
   .video-div {
     height: 400px;
-    overflow: hidden; 
-    position: relative; 
+    overflow: hidden;
+    position: relative;
   }
   .about-video {
     width: 100%;
-  height: 100%;
-  position: absolute; 
-  bottom: 0; 
-  object-fit: cover; 
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
   }
   .home-tab-buttons {
-   flex-direction: column;
-   align-items: center;
-   margin-bottom: 20px;
-   width: 80%;
-   top: 4px;
-   /* left: 45%; */
-   position: absolute;
-   top: -5px;
-   left: 50%;
-   transform: translateX(-50%);
-   z-index: 9;
- }
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+    top: 4px;
+    /* left: 45%; */
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
 
- .home-tab-buttons button {
-   width: 70%;
-   font-size: 1rem;
-   padding: 10px 20px;
- }
-
+  .home-tab-buttons button {
+    width: 70%;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 }

@@ -69,7 +69,8 @@ const Navbar = () => {
                 to="/successstories"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                {t("Success Stories")}
+                Uğurlarımız
+                {/* {t("Success Stories")} */}
               </Link>
             </li>
             <li>
@@ -82,7 +83,8 @@ const Navbar = () => {
                 to="/contact"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                {t("Contact us")}
+                Əlaqə
+                {/* {t("Contact us")} */}
               </Link>
             </li>
             <div className="navbar-buttons">
@@ -90,7 +92,10 @@ const Navbar = () => {
                 to="/apply"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
               >
-                <button className="apply-button">{t("Apply Now")}</button>
+                <button className="apply-button">
+                  Müraciət et
+                  {/* {t("Apply Now")} */}
+                  </button>
               </Link>
               <button className="language-button" onClick={toggleLanguage}>
                 {i18n.language === "az" ? "EN" : "AZ"}

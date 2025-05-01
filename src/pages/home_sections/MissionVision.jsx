@@ -3,31 +3,43 @@ import "./missionVision.css";
 import Mission from "../../assets/images/mission.jpg";
 import Vision from "../../assets/images/vision.jpg";
 import { useTranslation } from "react-i18next";
+import gifImage1 from "../../assets/images/eae48a63124aef9c73cac6fbe722dd28425bcc6b.gif";
+import gifImage2 from "../../assets/images/f11ce2855a2b392e1fe4ee18ef747ae52a83ed98.gif";
 function MissionVision() {
   const { t } = useTranslation();
+
   return (
-    <div className="missionVision" id="Mission">
-      <div>
-        <h2>{t("Mission")}</h2>
-        <img src={Mission} alt="Mission_Img" />
+    <section className="mission-vision">
+      <div className="mcontainer">
+        <div className="card mission">
+          <div className="circle-icon">
+            <img src={gifImage1} alt="Mission Icon" />
+          </div>
+          <div className="content">
+            <h3>{t("Missiyamız")}</h3>
+            <p>
+              Proqramın məqsədi bizneslərin rəqəmsallaşma və innovasiya yolu ilə
+              səmərəliliyinin və uzunmüddətli artımının dəstəklənməsi, bununla
+              da Azərbaycanın iqtisadiyyatının ümumi inkişafına töhfə verməkdir.
+            </p>
+          </div>
+        </div>
 
-        <p>
-          {t(
-            "The purpose of the program is to contribute to the efficiency and long-term growth of businesses through digitalization and innovation, thereby making a meaningful contribution to the overall development of Azerbaijan's economy."
-          )}
-        </p>
+        <div className="card vision">
+          <div className="circle-icon">
+            <img src={gifImage2} alt="Vision Icon" />
+          </div>
+          <div className="content">
+            <h3>{t("Vizyonumuz")}</h3>
+            <p>
+              “Sənaye 4.0 Hazırlıq” Proqramı ilə 2030-cu ilədək 4SIM və
+              İqtisadiyyat Nazirliyinin dəstəyi ilə ölkəmizin istehsal yönümlü
+              müəssisələrinin rəqəmsal transformasiyasına hədəflənmişdir.
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h2>{t("Vision")}</h2>
-        <img src={Vision} alt="Mission_Img" />
-
-        <p>
-          {t(
-            "The “Industry 4.0 Readiness” Program aims to digitally transform 650 manufacturing enterprises in Azerbaijan by 2030 under the supervision of 4SIM and the Ministry of Economy."
-          )}
-        </p>
-      </div>
-    </div>
+    </section>
   );
 }
 

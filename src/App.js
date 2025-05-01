@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import VideoOverlay from "./pages/VideoOverlay";
+import CircleMenu from "../src/pages/home_sections/CircleMenu"
 import "./App.css";
 
 const App = () => {

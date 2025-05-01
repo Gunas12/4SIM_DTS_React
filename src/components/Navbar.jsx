@@ -4,7 +4,9 @@ import "./navbar.css";
 import logoAZ from "../assets/images/4simlogoaz.svg";
 import logoEng from "../assets/images/4simlogoen.png";
 import { FiMenu, FiX } from "react-icons/fi";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
+import azin from "../assets/images/azin-loog.png";
+import logo2 from "../assets/images/Logo.png";
 
 const menuReducer = (state, action) => {
   switch (action.type) {
@@ -27,15 +29,18 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-container">
-        <Link to="/">
-          <img src={logo} alt="Logo" className="logo" />
+      <Link to="/">
+          <img src={azin} alt="Logo" className="logo" />
         </Link>
-        <div className="divider"></div>
+        <Link to="/">
+          <img src={logo2} alt="Logo" className="logo" />
+        </Link>
+        {/* <div className="divider"></div>
         <div className="digital-div">
           <p className="digital">{t("Industry 4.0")}</p>
           <p className="digital">{t("Readiness")}</p>
           <p className="digital">{t("Program")}</p>
-        </div>
+        </div> */}
 
         <div
           className="menu-icon"
@@ -47,9 +52,9 @@ const Navbar = () => {
         <div className={`navbar-ul-div ${state.isOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <Link to="/" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+              {/* <Link to="/" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
                 {t("About Program")}
-              </Link>
+              </Link> */}
             </li>
             <li>
               <Link

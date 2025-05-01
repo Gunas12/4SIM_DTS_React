@@ -8,12 +8,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(115deg, 
-  rgba(39, 48, 107, 1), 
-  rgba(37, 46, 102, 1), 
-  rgba(21, 26, 63, 1),
-  rgba(7, 10, 31, 1)
-);  padding: 10px 30px;
+ padding: 10px 30px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -26,6 +21,7 @@ nav {
   align-items: center;
   width: 100%;
   padding: 10px 20px;
+  gap: 30px;
 }
 
 .logo {

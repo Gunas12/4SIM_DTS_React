@@ -5,14 +5,16 @@ body {
   overflow-x: hidden;
   width: 100%;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(
+  /* background: linear-gradient(
     115deg,
     rgba(39, 48, 107, 1),
     rgba(37, 46, 102, 1),
     rgba(21, 26, 63, 1),
     rgba(7, 10, 31, 1)
-  );
+  ); */
+  
 }
+
 .about-program-main-container {
   display: flex;
   flex-direction: row;

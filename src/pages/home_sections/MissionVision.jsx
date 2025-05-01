@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./missionVision.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
@@ -16,28 +16,75 @@ function MissionVision() {
   const { t } = useTranslation();
   const sliderRef = useRef(null);
 
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
   const logos = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
 
   useEffect(() => {
-    let animationFrameId;
+    let frameId;
+    const speed = 0.5;
 
-    const scrollSlider = () => {
-      if (sliderRef.current) {
-        sliderRef.current.scrollLeft += 0.5;
+    const scroll = () => {
+      if (sliderRef.current && !isDragging) {
+        sliderRef.current.scrollLeft += speed;
         if (sliderRef.current.scrollLeft >= sliderRef.current.scrollWidth / 2) {
           sliderRef.current.scrollLeft = 0;
         }
       }
-      animationFrameId = requestAnimationFrame(scrollSlider);
+      frameId = requestAnimationFrame(scroll);
     };
 
-    scrollSlider();
+    scroll();
 
-    return () => cancelAnimationFrame(animationFrameId);
-  }, []);
+    return () => cancelAnimationFrame(frameId);
+  }, [isDragging]);
+
+  // Manual drag scroll
+  useEffect(() => {
+    const slider = sliderRef.current;
+
+    const handleMouseDown = (e) => {
+      setIsDragging(true);
+      setStartX(e.pageX - slider.offsetLeft);
+      setScrollLeft(slider.scrollLeft);
+      slider.style.cursor = "grabbing";
+    };
+
+    const handleMouseLeave = () => {
+      setIsDragging(false);
+      slider.style.cursor = "grab";
+    };
+
+    const handleMouseUp = () => {
+      setIsDragging(false);
+      slider.style.cursor = "grab";
+    };
+
+    const handleMouseMove = (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 1; // Sensitivity
+      slider.scrollLeft = scrollLeft - walk;
+    };
+
+    slider.addEventListener("mousedown", handleMouseDown);
+    slider.addEventListener("mouseleave", handleMouseLeave);
+    slider.addEventListener("mouseup", handleMouseUp);
+    slider.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      slider.removeEventListener("mousedown", handleMouseDown);
+      slider.removeEventListener("mouseleave", handleMouseLeave);
+      slider.removeEventListener("mouseup", handleMouseUp);
+      slider.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [isDragging, startX, scrollLeft]);
 
   return (
-    <>
+    <div className="mv">
       <section className="mission-vision">
         <div className="mcontainer">
           <div className="mcard mission">
@@ -76,7 +123,7 @@ function MissionVision() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

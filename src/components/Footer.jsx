@@ -29,19 +29,28 @@ function Footer() {
           </div>
 
           <div className="footer-icons">
-            <Link to="https://www.facebook.com/4sim.gov.az">
+            <a
+              href="https://www.facebook.com/4sim.gov.az"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebook />
-            </Link>
+            </a>
 
-            <Link to="https://www.instagram.com/c4ir_azerbaijan/">
+            <a
+              href="https://www.instagram.com/c4ir_azerbaijan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IoLogoInstagram />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/company/4simgovaz/
-"
+            </a>
+            <a
+              href="https://www.linkedin.com/company/4simgovaz/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedinIn />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./missionVision.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Carousel } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import gifImage1 from "../../assets/images/eae48a63124aef9c73cac6fbe722dd28425bcc6b.gif";
 import gifImage2 from "../../assets/images/f11ce2855a2b392e1fe4ee18ef747ae52a83ed98.gif";
@@ -10,78 +9,17 @@ import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/Group 11.svg";
 import img4 from "../../assets/images/azerfloat.svg";
 import img5 from "../../assets/images/Frame 56.svg";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/free-mode";
 
 function MissionVision() {
   const { i18n } = useTranslation();
   const { t } = useTranslation();
-  const sliderRef = useRef(null);
-
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
 
   const logos = [img1, img2, img3, img4, img5, img1, img2, img3, img4, img5];
-
-  useEffect(() => {
-    let frameId;
-    const speed = 0.5;
-
-    const scroll = () => {
-      if (sliderRef.current && !isDragging) {
-        sliderRef.current.scrollLeft += speed;
-        if (sliderRef.current.scrollLeft >= sliderRef.current.scrollWidth / 2) {
-          sliderRef.current.scrollLeft = 0;
-        }
-      }
-      frameId = requestAnimationFrame(scroll);
-    };
-
-    scroll();
-
-    return () => cancelAnimationFrame(frameId);
-  }, [isDragging]);
-
-  // Manual drag scroll
-  useEffect(() => {
-    const slider = sliderRef.current;
-
-    const handleMouseDown = (e) => {
-      setIsDragging(true);
-      setStartX(e.pageX - slider.offsetLeft);
-      setScrollLeft(slider.scrollLeft);
-      slider.style.cursor = "grabbing";
-    };
-
-    const handleMouseLeave = () => {
-      setIsDragging(false);
-      slider.style.cursor = "grab";
-    };
-
-    const handleMouseUp = () => {
-      setIsDragging(false);
-      slider.style.cursor = "grab";
-    };
-
-    const handleMouseMove = (e) => {
-      if (!isDragging) return;
-      e.preventDefault();
-      const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 1; // Sensitivity
-      slider.scrollLeft = scrollLeft - walk;
-    };
-
-    slider.addEventListener("mousedown", handleMouseDown);
-    slider.addEventListener("mouseleave", handleMouseLeave);
-    slider.addEventListener("mouseup", handleMouseUp);
-    slider.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      slider.removeEventListener("mousedown", handleMouseDown);
-      slider.removeEventListener("mouseleave", handleMouseLeave);
-      slider.removeEventListener("mouseup", handleMouseUp);
-      slider.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, [isDragging, startX, scrollLeft]);
 
   return (
     <div className="mv">
@@ -117,10 +55,46 @@ function MissionVision() {
         </div>
       </section>
       <div className="logo-slider">
-        <div className="logo-slider-container" ref={sliderRef}>
-          {[...logos, ...logos].map((img, idx) => (
-            <img key={idx} src={img} alt={`logo-${idx}`} className="logo-img" />
-          ))}
+        <div className="logo-slider-container">
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={10}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+            loop={true}
+            grabCursor={true}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              480: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+              992: {
+                slidesPerView: 4,
+              },
+              1200: {
+                slidesPerView: 5,
+              },
+            }}
+          >
+            {logos.map((img, index) => (
+              <SwiperSlide key={index}>
+                <img src={img} alt={`logo-${index}`} className="logo-img" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

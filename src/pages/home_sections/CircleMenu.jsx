@@ -31,7 +31,47 @@ const VideoComponent = () => {
           <source src={V} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
+        <div
+          class="modal fade bd-example-modal-lg"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myLargeModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                {/* <h5 class="modal-title" id="exampleModalLabel">
+                  Modal title
+                </h5>*/}
+                <button
+                  type="button"
+                  class="close "
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Bu proqram üzrə ümumi koordinasiya Dördüncü Sənaye İnqilabının
+                  Təhlili və Koordinasiya Mərkəzi (4SİM) tərəfindən həyata
+                  keçirilir. Proqram, Azərbaycan Respublikası İqtisadiyyat
+                  Nazirliyinin (İN) dəstəyi ilə həyata keçirilir.
+                  <br />
+                </p>
+                <p>
+                  Proqram, "Azərbaycan Respublikasının 2022-2026-cı illərdə
+                  Sosial-İqtisadi İnkişaf Strategiyası" ilə müəyyən edilmiş
+                  məqsədlərə xidmət edərək Azərbaycan bizneslərinə kompleks
+                  rəqəmsal transformasiya prosesini həyata keçirməkdə kömək
+                  edir.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="overlay">
           <div></div>
           <div>
@@ -46,8 +86,15 @@ const VideoComponent = () => {
               tədbirlər həyata keçirilir.
             </p>
             <div className="about-buttons">
-              <button>Müraciət et</button>
-              <button className="more">Ətraflı</button>
+              <button className="m">Müraciət et</button>
+              <button
+                type="button"
+                data-toggle="modal"
+                data-target=".bd-example-modal-lg"
+                className="more"
+              >
+                Ətraflı
+              </button>
             </div>
           </div>
           <div className="ablogo">

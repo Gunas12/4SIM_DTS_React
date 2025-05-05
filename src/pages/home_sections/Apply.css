@@ -116,10 +116,11 @@ textarea:focus {
   display: flex;
   flex-direction: column;
 }
+/*
 button:hover {
   background: linear-gradient(135deg, #0056b3, #004099);
   transform: scale(1.02);
-}
+}*/
 
 .checkbox-group {
   display: flex;

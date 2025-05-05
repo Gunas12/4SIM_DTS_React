@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-
+import { IoIosArrowDown } from "react-icons/io";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import azin from "../assets/images/azin-loog.png";
@@ -100,6 +100,7 @@ const Navbar = () => {
                 onClick={toggleLanguage}
               >
                 {i18n.language === "az" ? "EN" : "AZ"}
+                <IoIosArrowDown className="arrv" />
               </button>
             </div>
           </ul>

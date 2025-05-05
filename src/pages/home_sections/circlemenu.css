@@ -83,8 +83,9 @@ body {
   color: black !important;
 }
 .more:hover {
-  background-color: black !important;
-  color: white !important;
+  background-color: white !important;
+  color: black !important;
+  scale: 1.01;
 }
 
 .about-logos img {
@@ -112,8 +113,11 @@ body {
 }
 
 .about-buttons button:hover {
-  background-color: #003080;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* background-color: #003080;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);*/
+}
+.m {
+  scale: 1.01;
 }
 
 .about-video {
@@ -131,11 +135,11 @@ body {
   transform: translateX(-50%);
   display: flex;
   gap: 15px;
-  z-index: 999;
+  z-index: 100;
 }
 
 .home-tab-buttons button {
-  background: linear-gradient(135deg, #4077d8, #1e3a8a);
+  /* background: linear-gradient(135deg, #4077d8, #1e3a8a);
   color: white;
   border: none;
   padding: 12px 25px;
@@ -145,14 +149,14 @@ body {
   font-size: 1.2rem;
   border-radius: 25px;
   transition: 0.3s ease-in-out;
-  border: 1px solid white;
+  border: 1px solid white;*/
 }
-
+/*
 .home-tab-buttons button:hover,
 .home-tab-buttons button.active {
   background: linear-gradient(135deg, #1e3a8a, #0f172a);
   transform: scale(1.05);
-}
+}*/
 .home-sections {
   position: relative;
   padding-top: 10px;
@@ -306,4 +310,78 @@ body {
     font-size: 1rem;
     padding: 10px 20px;
   }
+}
+
+.modal {
+  z-index: 3000 !important;
+}
+.modal-backdrop {
+  z-index: 2999 !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.modal-content {
+  background: linear-gradient(180.09deg, #1a4381 -96.34%, #ffffff 99.92%);
+  border-radius: 50px;
+  padding: 30px;
+  color: #1a1a1a;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+  justify-content: flex-end;
+}
+
+/* Close düyməsi */
+.modal-header .close {
+  font-size: 1.5rem;
+  color: #333;
+  opacity: 1;
+}
+
+/* Modal text */
+.modal-body p {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 1rem;
+}
+
+/* Center the modal */
+.modal-dialog {
+  max-width: 90%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  border-radius: 50px !important;
+  text-align: left;
+}
+.modal-header {
+  border-bottom: 0px !important;
+  padding-bottom: 0;
+  height: 40px;
+}
+
+.modal-header hr {
+  display: none;
+}
+
+/* Style the close button (X) */
+.modal-header .close {
+  font-size: 3rem;
+  font-weight: 100;
+  color: #333;
+  opacity: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-header .close:hover {
+  background-color: transparent !important;
 }

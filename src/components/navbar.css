@@ -116,6 +116,13 @@ nav {
   cursor: pointer;
   /* transition: background 0.3s, border-color 0.3s;*/
 }
+.language-button:hover {
+  background-color: white;
+  color: black;
+}
+.arrv {
+  margin-left: 8px;
+}
 
 .menu-icon {
   display: none;
@@ -329,7 +336,6 @@ nav {
   letter-spacing: 0%;
   color: #fff;
 }
-
 
 @media (max-width: 600px) {
   nav {

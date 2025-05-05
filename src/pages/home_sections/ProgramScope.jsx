@@ -4,7 +4,7 @@ import "./programScope.css";
 import DigitalMaturity from "../home_sections/GlobeLock.png";
 import DigitalTransformation from "../home_sections/Book.png";
 import DigitalSkills from "../home_sections/Handshake.png";
-
+import Down from "../../assets/images/formkit_down.svg";
 const ProgramScope = () => {
   const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
@@ -29,8 +29,7 @@ const ProgramScope = () => {
     {
       icon: DigitalSkills,
       title: "İcra dəstəyinin göstərilməsi",
-      description:
-        "Şirkətin rəqəmsal layihələrinin icrasına dəstək verilir.",
+      description: "Şirkətin rəqəmsal layihələrinin icrasına dəstək verilir.",
     },
     {
       icon: DigitalSkills,
@@ -50,8 +49,13 @@ const ProgramScope = () => {
       <div className="program-first-div">
         <h2 className="program-title">{t("Program Scope")}</h2>
         <p className="program-descp">
-          <p>Proqram çərçivəsində rəqəmsal transformasiya dəstəyi alan hədəf şirkətlər,</p>
-          <p>5 əsas istiqamətdə dəstək alacaqlar:</p>
+          <p>
+            Proqram çərçivəsində rəqəmsal transformasiya dəstəyi alan hədəf
+            şirkətlər,
+          </p>
+          <p>
+            <span className="ss">5 əsas istiqamətdə</span> dəstək alacaqlar:
+          </p>
         </p>
       </div>
 
@@ -64,12 +68,19 @@ const ProgramScope = () => {
           >
             <div className="scope-header">
               <img src={scope.icon} alt="icon" className="scope-icon" />
-              <h3 className="scope-title">{scope.title}</h3>
+              <div className="scope-header-h">
+                <h3 className="scope-title">{scope.title}</h3>
+                <a>
+                  <img
+                    src={Down}
+                    alt="icon"
+                    className="scope-icon scope-iconh"
+                  />
+                </a>
+              </div>
             </div>
             <div
-              className={`scope-collapse ${
-                openIndex === index ? "open" : ""
-              }`}
+              className={`scope-collapse ${openIndex === index ? "open" : ""}`}
             >
               <p className="scope-descp">{scope.description}</p>
             </div>

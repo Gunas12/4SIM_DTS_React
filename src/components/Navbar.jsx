@@ -1,13 +1,13 @@
 import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import logoAZ from "../assets/images/4simlogoaz.svg";
-import logoEng from "../assets/images/4simlogoen.png";
+
 import { FiMenu, FiX } from "react-icons/fi";
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
 import azin from "../assets/images/azin-loog.png";
 import logo2 from "../assets/images/Logo.png";
-
+import LogoAz from "../assets/images/4SIM.svg";
+import LogoEn from "../assets/images/4simlogoen.png";
 const menuReducer = (state, action) => {
   switch (action.type) {
     case "TOGGLE_MENU":
@@ -25,23 +25,20 @@ const Navbar = () => {
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "az" ? "en" : "az");
   };
-  const logo = i18n.language === "az" ? logoAZ : logoEng;
+  const logo = i18n.language === "az" ? LogoAz : LogoEn;
   return (
     <nav>
       <div className="nav-container">
-      <Link to="/">
-          <img src={azin} alt="Logo" className="logo" />
-        </Link>
-        <Link to="/">
-          <img src={logo2} alt="Logo" className="logo" />
-        </Link>
-        {/* <div className="divider"></div>
-        <div className="digital-div">
-          <p className="digital">{t("Industry 4.0")}</p>
-          <p className="digital">{t("Readiness")}</p>
-          <p className="digital">{t("Program")}</p>
-        </div> */}
-
+        <div className="naav-logo">
+          <Link to="/">
+            <img src={azin} alt="Azin Logo" className="flogo1" />
+            <img src={logo} alt="4SIM_logo" className="naav-logo-img" />
+          </Link>
+          <div className="naav-divider"></div>
+          <div className="naav-text">
+            <p className="fp">{t("INDUSTRY 4.0 READİNESS PROGRAM")}</p>
+          </div>
+        </div>
         <div
           className="menu-icon"
           onClick={() => dispatch({ type: "TOGGLE_MENU" })}
@@ -51,11 +48,11 @@ const Navbar = () => {
 
         <div className={`navbar-ul-div ${state.isOpen ? "open" : ""}`}>
           <ul>
-            <li>
-              {/* <Link to="/" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
+            {/* <li>
+              <Link to="/" onClick={() => dispatch({ type: "TOGGLE_MENU" })}>
                 {t("About Program")}
-              </Link> */}
-            </li>
+              </Link> 
+            </li>*/}
             <li>
               <Link
                 to="/eligibity"
@@ -95,9 +92,13 @@ const Navbar = () => {
                 <button className="apply-button">
                   Müraciət et
                   {/* {t("Apply Now")} */}
-                  </button>
+                </button>
               </Link>
-              <button className="language-button" onClick={toggleLanguage}>
+              <button
+                className="language-button"
+                id="lang"
+                onClick={toggleLanguage}
+              >
                 {i18n.language === "az" ? "EN" : "AZ"}
               </button>
             </div>

@@ -283,10 +283,14 @@
     font-size: 1rem;
     padding: 10px 20px;
   }
+  .item1 {
+    flex-wrap: wrap;
+  }
   .criteria-item {
     width: 400px;
-    height: 300px !important;
+    height: 400px !important;
     margin: 20px 0;
+    flex-wrap: wrap;
   }
   .criteria-itemm p {
     max-width: 350px !important;
@@ -499,4 +503,16 @@
 
 .rotate {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 530px) {
+  .criteria-item {
+    width: 360px;
+    height: 500px !important;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  .item2 {
+    max-width: 360px !important;
+  }
 }

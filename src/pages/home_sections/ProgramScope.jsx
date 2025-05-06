@@ -5,6 +5,7 @@ import DigitalMaturity from "../home_sections/GlobeLock.png";
 import DigitalTransformation from "../home_sections/Book.png";
 import DigitalSkills from "../home_sections/Handshake.png";
 import Down from "../../assets/images/formkit_down.svg";
+
 const ProgramScope = () => {
   const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
@@ -74,7 +75,9 @@ const ProgramScope = () => {
                   <img
                     src={Down}
                     alt="icon"
-                    className="scope-icon scope-iconh"
+                    className={`scope-icon scope-iconh ${
+                      openIndex === index ? "rotate" : ""
+                    }`}
                   />
                 </a>
               </div>

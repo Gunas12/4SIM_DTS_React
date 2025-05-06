@@ -111,3 +111,21 @@ hr {
   align-items: center;
   flex-wrap: wrap;
 }
+.ft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footerh {
+    flex-direction: column;
+  }
+  .footer-logo {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .fp {
+    font-size: 11px;
+  }
+}

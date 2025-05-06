@@ -29,7 +29,7 @@ function MissionVision() {
             <div className="circle-icon">
               <img src={gifImage1} alt="Mission Icon" />
             </div>
-            <div className="content">
+            <div className="contenta">
               <h3 className="mh3">{t("Our Mission")}</h3>
               <p className="mp">
                 {t(
@@ -43,7 +43,7 @@ function MissionVision() {
             <div className="circle-icon">
               <img src={gifImage2} alt="Vision Icon" />
             </div>
-            <div className="content">
+            <div className="contenta">
               <h3 className="mh3">{t("Our Vision")}</h3>
               <p className="mp">
                 {t(

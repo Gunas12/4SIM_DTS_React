@@ -1,11 +1,21 @@
 import React, { useState } from "react";
-import Success from "../assets/videos/success.mp4";
+
 import Export from "../assets/images/export.jpg";
 import Industry from "../assets/images/industry.jpg";
 import Leader from "../assets/images/leadership.jpg";
 import "./eligibility.css";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import Success from "../pages/home_sections/900cc44fae9f46c680a99105fabe5b096aa0144d.mp4";
+
+import E_1 from "../assets/images/eligibility_1.png";
+import E_2 from "../assets/images/eligibility_2.png";
+import E_3 from "../assets/images/eligibility_3.png";
+import Down from "../assets/images/formkit_down.svg";
+import Gif_1 from "../assets/videos/10ba024cb528d82f11d09e2ab8ea9d467241d3fb.gif";
+import Gif_2 from "../assets/videos/7c12dee339a0796d4f49232e6f68531d944fdd3d.gif";
+import Gif_3 from "../assets/videos/8bc14bdaaeec72bb08e93c6d73b4476b5ae8bdc5.gif";
+
 function Eligibility() {
   const fadeInVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -16,7 +26,33 @@ function Eligibility() {
     },
   };
   const [activeTab, setActiveTab] = useState("eligibility");
+  const [openIndex, setOpenIndex] = useState(null);
   const { t } = useTranslation();
+  const toggleScope = (index) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
+  const scopes = [
+    {
+      icon: E_1,
+      title: "İxrac potensialı",
+      description:
+        "İxrac potensialı yüksək olan, yəni daha yüksək ixrac nisbətinə və beynəlxalq bazarlarda mövcudluğa sahib şirkətlərə üstünlük veriləcəkdir. Belə şirkətlər qlobal rəqabət qabiliyyətinin artırılmasına töhfə verdikləri üçün proqramın məqsədləri ilə daha sıx şəkildə uzlaşır.",
+    },
+    {
+      icon: E_2,
+      title: "Rəhbərlik təminatı",
+      description:
+        "Güclü müraciətlərdə adətən təşkilatın üst rəhbərliyi və digər əsas idarəetmə strukturları rəqəmsal transformasiya prosesinə aktiv şəkildə dəstək göstərir və ona liderlik edirlər. Həmçinin, belə şirkətlərdə ya artıq mövcud rəqəmsal strategiya yerləşdirilmiş olur, ya da bu strategiyanın inkişaf etdirilməsi üzrə konkret addımlar atılır.",
+    },
+    {
+      icon: E_3,
+      title: "Sənaye mərkəzi",
+      description:
+        "Proqram çərçivəsində iqtisadi diversifikasiyaya və sənaye inkişafına töhfə verən istehsalat şirkətlərinə üstünlük verilir. Bu üstünlük, xüsusilə qida və içkilər, mürəkkəb neft məhsulları, kimyəvi maddələr, digər qarışıq mineral məhsulları, əsas metallar, maşın və avadanlıqların təmiri və quraşdırılması, lastik və plastik məhsullar, qabartılmış metal məmulatlar, tekstil, maşın və avadanlıqlar, həmçinin elektrik avadanlıqları sahəsində fəaliyyət göstərən şirkətləri əhatə edir.",
+    },
+  ];
+
   return (
     <div className="elig">
       <div className="video-home3">
@@ -25,38 +61,17 @@ function Eligibility() {
           Your browser does not support the video tag.
         </video>
         <div className="video-titl">
-          <p>{t("Eligibility")} </p>
-          <p>&</p>
-          <p>{t("Prioritization")}</p>
+          <p>{t("Eligibility & Prioritization")} </p>
         </div>
       </div>
       <div className="elig-sections">
-        <h2
-          style={{
-            fontSize: "38px",
-            marginTop: "28px",
-            marginBottom: "0px",
-            color: "white",
-          }}
-        >
-          {t("Eligibility və Prioritization")}
-        </h2>
-        <motion.div
-          className="sectionx section"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={fadeInVariants}
-        >
-          <section className="eligibility-criteria">
-            <h3>{t("Eligibility Criteria")}</h3>
-            <p className="description" style={{ color: "white" }}>
-              {t(
-                "To benefit from the “Industry 4.0 Readiness” Program, companies must meet the following criteria:"
-              )}
-            </p>
-            <div className="criteria-list">
-              <div className="criteria-item">
+        <section className="eligibility-criteria">
+          <h3>{t("Eligibility Criteria")}</h3>
+
+          <div className="criteria-list">
+            <div className="criteria-item">
+              <div className="item1">{/*   <img src="" alt="gif" />*/}</div>
+              <div className="item1text">
                 <h4>{t("Legal Registration Address")}</h4>
                 <p>
                   {t(
@@ -64,7 +79,12 @@ function Eligibility() {
                   )}
                 </p>
               </div>
-              <div className="criteria-item">
+            </div>
+            <div className="criteria-item">
+              <div className="item1">
+                <img src={Gif_1} alt="gif" />
+              </div>
+              <div className="item1text">
                 <h4>{t("Local Ownership")}</h4>
                 <p>
                   {t(
@@ -72,8 +92,15 @@ function Eligibility() {
                   )}
                 </p>
               </div>
-              <div className="criteria-item">
-                <h4>{t("Priority Sectors")}</h4>
+            </div>
+          </div>
+          <div className="criteria-list">
+            <div className="criteria-item">
+              <div className="criteria-itemm">
+                <div className="item2">
+                  <img src={Gif_2} alt="gif2" />
+                  <h4>{t("Priority Sectors")}</h4>
+                </div>
                 <p>
                   {t(
                     "The company must operate in one of the following priority sectors:"
@@ -86,8 +113,12 @@ function Eligibility() {
                   <li>{t("Other relevant fields")}</li>
                 </ul>
               </div>
-              <div className="criteria-item">
-                <h4>{t("Company Size")}</h4>
+            </div>
+            <div className="criteria-item">
+              <div className="criteria-itemm">
+                <div className="item2">
+                  <img src={Gif_3} alt="gif3" /> <h4>{t("Company Size")}</h4>
+                </div>
                 <p>
                   {t("The company must meet the following size requirements:")}
                 </p>
@@ -103,54 +134,52 @@ function Eligibility() {
                 </ul>
               </div>
             </div>
-          </section>
-        </motion.div>
-        <motion.div
-          className="sectionx section"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={fadeInVariants}
-        >
-          <section className="prioritization-methodology">
-            <h3>{t("Prioritization Methodology")}</h3>
-            <p style={{ color: "white" }}>
-              {t(
-                "Under the program, a limited number of companies will be selected each year and invited to participate. Eligible applicants will be officially notified at least three months prior to the start of their participation. This timeframe provides sufficient opportunity for initial discussions and necessary preparations."
-              )}
-            </p>
+          </div>
+        </section>
 
-            <div className="prior_cards_section">
-              <div className="prior_card">
-                <img src={Industry} alt="Industry Focus" />
-                <h2>{t("Industrial Focus")}</h2>
-                <p>
-                  {t(
-                    "Preference will be given to manufacturing companies that contribute to economic diversification and industrial development. This includes, in particular, companies operating in the following areas: food and beverage production, refined petroleum products, chemicals, other mineral-based products, basic metals, machinery and equipment maintenance and installation, rubber and plastic products, fabricated metal products, textiles, machinery and equipment, as well as electrical equipment."
-                  )}
-                </p>
+        <section className="prioritization-methodology">
+          <h3>{t("Prioritization Methodology")}</h3>
+          <p className="bbb">
+            {t(
+              "Under the program, a limited number of companies will be selected each year and invited to participate. Eligible applicants will be officially notified at least three months prior to the start of their participation. This timeframe provides sufficient opportunity for initial discussions and necessary preparations."
+            )}
+          </p>
+
+          <div className="program-second-divn">
+            {scopes.map((scope, index) => (
+              <div
+                className={`digital-scopen ${
+                  openIndex === index ? "expandedn" : ""
+                }`}
+                key={index}
+                onClick={() => toggleScope(index)}
+              >
+                <div className="scope-headern">
+                  <img src={scope.icon} alt="icon" className="scope-icon" />
+                  <div className="scope-header-hn">
+                    <h3 className="scope-title">{scope.title}</h3>
+                    <a>
+                      <img
+                        src={Down}
+                        alt="icon"
+                        className={`scope-icon scope-iconh ${
+                          openIndex === index ? "rotate" : ""
+                        }`}
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  className={`scope-collapse ${
+                    openIndex === index ? "open" : ""
+                  }`}
+                >
+                  <p className="scope-descpn">{scope.description}</p>
+                </div>
               </div>
-              <div className="prior_card">
-                <img src={Export} alt="Export Potential" />
-                <h2>{t("Export Potential")}</h2>
-                <p>
-                  {t(
-                    "Companies with high export potential those with a strong export ratio and presence in international markets will be prioritized. These companies align more closely with the goals of the program by contributing to enhanced global competitiveness."
-                  )}
-                </p>
-              </div>
-              <div className="prior_card">
-                <img src={Leader} alt="Leadership Commitment" />
-                <h2>{t("Leadership Commitment")}</h2>
-                <p>
-                  {t(
-                    "Strong applications typically demonstrate active support and leadership from top management and other key governance structures in the digital transformation process. Such companies often already have a digital strategy in place or are taking concrete steps toward its development."
-                  )}
-                </p>
-              </div>
-            </div>
-          </section>
-        </motion.div>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
   );

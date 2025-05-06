@@ -21,10 +21,12 @@ function Footer() {
           <div className="footer-logo">
             <img src={azin} alt="Azin Logo" className="flogo1" />
 
-            <img src={logo} alt="4SIM_logo" className="footer-logo-img" />
-            <div className="footer-divider"></div>
-            <div className="footer-text">
-              <p className="fp">{t("INDUSTRY 4.0 READİNESS PROGRAM")}</p>
+            <div className="ft">
+              <img src={logo} alt="4SIM_logo" className="footer-logo-img" />
+              <div className="footer-divider"></div>
+              <div className="footer-text">
+                <p className="fp">{t("INDUSTRY 4.0 READİNESS PROGRAM")}</p>
+              </div>
             </div>
           </div>
 

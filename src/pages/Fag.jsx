@@ -3,6 +3,8 @@ import "./fag.css";
 import fag from "../assets/videos/fag.mp4";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
+import { IoIosArrowDown } from "react-icons/io";
+import Success from "../pages/home_sections/900cc44fae9f46c680a99105fabe5b096aa0144d.mp4";
 function Fag() {
   const [activeIndex, setActiveIndex] = useState(null);
   const { t } = useTranslation();
@@ -14,13 +16,10 @@ function Fag() {
     <div className="Fagg">
       <div className="video-home7">
         <video autoPlay muted loop>
-          <source src={fag} type="video/mp4" />
+          <source src={Success} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="video-titlex tt">
-          <h3>{t("Frequently")}</h3>
-          <h3>{t("Asked Questions")}</h3>
-        </div>
+        <h2 className="video-title">{t("Tez-tezverilən suallar")}</h2>
       </div>
 
       <div className="Fag">
@@ -30,11 +29,14 @@ function Fag() {
           </h4>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(0)}>
-              {t("When will I know if my company is eligible for the program?")}
+              {t(
+                "1. When will I know if my company is eligible for the program?"
+              )}
               <span className={`faq-icon ${activeIndex === 0 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
+
             <div className={`faq-answer ${activeIndex === 0 ? "active" : ""}`}>
               {t(
                 "You will receive a notification regarding your eligibility within one month after submitting your application. The eligibility assessment will be based on criteria such as your company’s size, sector of activity, and level of digital readiness."
@@ -44,10 +46,10 @@ function Fag() {
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(1)}>
               {t(
-                "When will I be informed if my company is selected as a priority participant?"
+                "2. When will I be informed if my company is selected as a priority participant?"
               )}
               <span className={`faq-icon ${activeIndex === 1 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 1 ? "active" : ""}`}>
@@ -59,10 +61,10 @@ function Fag() {
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(2)}>
               {t(
-                "How does 4SIM support companies in obtaining financing from SIF?"
+                "3. How does 4SIM support companies in obtaining financing from SIF?"
               )}
               <span className={`faq-icon ${activeIndex === 2 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 2 ? "active" : ""}`}>
@@ -74,15 +76,14 @@ function Fag() {
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(3)}>
               {t(
-                "What type of financial support will my company receive from the program?"
+                "4. What type of financial support will my company receive from the program?"
               )}
               <span className={`faq-icon ${activeIndex === 3 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 3 ? "active" : ""}`}>
               <p>
-                {" "}
                 {t(
                   "The “Industry 4.0 Readiness” Program offers financial support in two areas:"
                 )}
@@ -106,9 +107,9 @@ function Fag() {
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(4)}>
-              {t("Does the program cover grants for consulting services?")}
+              {t("5. Does the program cover grants for consulting services?")}
               <span className={`faq-icon ${activeIndex === 4 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 4 ? "active" : ""}`}>
@@ -119,9 +120,9 @@ function Fag() {
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(5)}>
-              {t("How long does it take to receive the financial support?")}
+              {t("6. How long does it take to receive the financial support?")}
               <span className={`faq-icon ${activeIndex === 5 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 5 ? "active" : ""}`}>
@@ -132,9 +133,9 @@ function Fag() {
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(6)}>
-              {t("Will the application portal remain open continuously?")}
+              {t("7. Will the application portal remain open continuously?")}
               <span className={`faq-icon ${activeIndex === 6 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 6 ? "active" : ""}`}>
@@ -145,9 +146,9 @@ function Fag() {
           </div>
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(7)}>
-              {t("If my company is not selected, can we apply again?")}
+              {t("8. If my company is not selected, can we apply again?")}
               <span className={`faq-icon ${activeIndex === 7 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 7 ? "active" : ""}`}>
@@ -159,10 +160,10 @@ function Fag() {
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(8)}>
               {t(
-                "How can we determine if our company is ready for digital transformation?"
+                "9. How can we determine if our company is ready for digital transformation?"
               )}
               <span className={`faq-icon ${activeIndex === 8 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 8 ? "active" : ""}`}>
@@ -174,10 +175,10 @@ function Fag() {
           <div className="faq-item">
             <button className="faq-question" onClick={() => toggleAccordion(9)}>
               {t(
-                "What types of training and upskilling support are offered under the program?"
+                "10. What types of training and upskilling support are offered under the program?"
               )}
               <span className={`faq-icon ${activeIndex === 9 ? "active" : ""}`}>
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 9 ? "active" : ""}`}>
@@ -192,12 +193,12 @@ function Fag() {
               onClick={() => toggleAccordion(10)}
             >
               {t(
-                "What activities are covered by the financial support under the program, and are there any usage restrictions?"
+                "11. What activities are covered by the financial support under the program, and are there any usage restrictions?"
               )}
               <span
                 className={`faq-icon ${activeIndex === 10 ? "active" : ""}`}
               >
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 10 ? "active" : ""}`}>
@@ -228,12 +229,12 @@ function Fag() {
               onClick={() => toggleAccordion(11)}
             >
               {t(
-                "Will participation in the program help improve our international competitiveness?"
+                "12. Will participation in the program help improve our international competitiveness?"
               )}
               <span
                 className={`faq-icon ${activeIndex === 11 ? "active" : ""}`}
               >
-                &#9660;
+                <IoIosArrowDown />
               </span>
             </button>
             <div className={`faq-answer ${activeIndex === 11 ? "active" : ""}`}>

@@ -206,7 +206,7 @@
 }
 
 .responsive-video-wrapper {
-  background-color: #252e66;
+  background-color: whitesmoke !important;
   width: 100%;
   min-height: 70vh;
   display: flex;

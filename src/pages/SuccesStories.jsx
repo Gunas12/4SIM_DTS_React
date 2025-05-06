@@ -2,8 +2,8 @@ import React from "react";
 /*
 import Success1 from "../assets/videos/succes_v.mp4";
 
-import { motion } from "framer-motion";
-import Succ_Video from "../assets/videos/success_story.mp4";*/
+import { motion } from "framer-motion";*/
+import Succ_Video from "../assets/videos/success_story.mp4";
 import Success from "../pages/home_sections/900cc44fae9f46c680a99105fabe5b096aa0144d.mp4";
 import "./SuccesStories.css";
 import Stp from "../assets/images/Property 1=image 1.png";
@@ -89,15 +89,16 @@ function SuccesStories() {
         </div>
       </section>
 
-      {/*
-      <div className="responsive-video-wrapper">
-        <div className="video-box">
-          <video ref={videoRef} className="responsive-video" controls>
-            <source src={Succ_Video} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      {
+        <div className="responsive-video-wrapper">
+          <div className="video-box">
+            <video ref={videoRef} className="responsive-video" controls>
+              <source src={Succ_Video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-      </div>*/}
+      }
     </div>
   );
 }
